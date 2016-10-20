@@ -22,20 +22,45 @@ li {
   text-align: right;
   width:100%
 }
-.search-icon {
+.search-icon, .nav-icon {
   background:#d8d7d2;
   border-radius: 50%;
   box-shadow: 0px 0px 0px 3px rgba(215, 214, 209, .4);
   display:inline-block;
   height:35px;
-  margin-right:50px;
+  margin-right:25px;
   width:35px;
 }
-.search-icon:before {
+.search-icon:before, .nav-icon:before {
   color:#4e4a47;
   content: "\f002";
   font-family:FontAwesome;
   left:-10px;
   position:relative;
   top:9px;
+}
+.nav-icon {
+    margin-right:25px;
+}
+.nav-icon:before {
+    content:'\f0c9';
+}
+.nav-item {
+    display:inline-block;
+}
+.nav-container {
+    background-color: #4E4A47;
+    color: white;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 0;
+}
+.nav-is-open {
+    width:220px;
+}
+.nav-is-closed {
+    display: none;
 }
