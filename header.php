@@ -9,6 +9,7 @@
 <title>Doorways Housing - <?php wp_title(''); ?></title>
 <link rel="icon" type="image/svg+xml" href="<insert svg file link here>">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/common.css"/>
 <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/homepage.css"/>
 <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/donationpage.css"/>
@@ -21,20 +22,14 @@
 </head>
 
 <body>
-<div id="top-nav">
-  <ul>
-    <li class="search-icon"></li>
-    <li class="nav-icon"></li>
-  </ul>
-</div>
-<div class="nav-container">
-    <ul class="nav-is-closed">
-        <li class="nav-item">Home</li>
-        <li class="nav-item">About</li>
-        <li class="nav-item">Housing & HIV</li>
-        <li class="nav-item">Programs</li>
-        <li class="nav-item">Resources</li>
-        <li class="nav-item">News & Events</li>
-        <li class="nav-item">Get Involved</li>
-    </ul>
-</div>
+    <div id="top-nav">
+      <ul>
+        <li class="search-icon"></li>
+        <li class="nav-icon"></li>
+      </ul>
+    </div>
+    <?php
+    wp_nav_menu( array(
+        'theme_location' => 'main-navigation',
+        'container_class' => 'nav-container' ) );
+    ?>
