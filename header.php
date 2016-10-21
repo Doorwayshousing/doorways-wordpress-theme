@@ -10,15 +10,10 @@
 <link rel="icon" type="image/svg+xml" href="<insert svg file link here>">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/common.css"/>
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/nav.css"/>
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/search.css"/>
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/homepage.css"/>
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/donationpage.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src="https://www.sagepayments.net/pay/1.0.0/js/pay.min.js"></script>
-<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/nav.js"></script>
-<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/donation.js"></script>
+<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/css/custom.min.css">
+<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/js/custom.min.js"></script>
 
 <? wp_head(); ?>
 </head>
