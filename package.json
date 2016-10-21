@@ -1,0 +1,26 @@
+{
+  "name": "doorways-wordpress-theme",
+  "version": "1.0.0",
+  "description": "Wordpress theme for the doorways org's website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Doorwayshousing/doorways-wordpress-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Doorwayshousing/doorways-wordpress-theme/issues"
+  },
+  "homepage": "https://github.com/Doorwayshousing/doorways-wordpress-theme#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
