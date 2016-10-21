@@ -1,0 +1,50 @@
+.search-container {
+    background: rgba(78, 74, 71, 0.9) none repeat scroll 0 0;
+    color: white;
+    height: 90px;
+    max-width: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    z-index: 2;
+}
+.search-is-open {
+    transition: all 0.2s ease 0s;
+    max-width: 700px;
+    padding: 0 3%;
+}
+.search-is-closed {
+    transition: all 0.2s ease 0s;
+    display: none;
+}
+.search-form {
+    transition: all 0.2s ease 0s;
+    width:250px;
+    padding: 20px 7% 7%;
+    border-radius:4px;
+}
+.search-field {
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 10px;
+    width: 220px;
+    display:inline-block;
+}
+.search-submit {
+    display: inline-block;
+    width: 10px;
+}
+
+/* ----------- Our breakpoints - use in each .css file as needed ----------- */
+@media screen and (max-width: 800px) {
+    .search-is-open {
+        transition: all 0.2s ease 0s;
+        width: 100%;
+    }
+    .search-form {
+        transition: all 0.2s ease 0s;
+        width:100%;
+    }
+}
