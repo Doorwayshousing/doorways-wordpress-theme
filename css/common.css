@@ -24,6 +24,7 @@ li {
   width:100%
 }
 .search-icon, .nav-icon {
+  transition: all 0.2s ease 0s;
   background:#d8d7d2;
   border-radius: 50%;
   box-shadow: 0px 0px 0px 3px rgba(215, 214, 209, .4);
@@ -31,6 +32,10 @@ li {
   height:35px;
   margin-right:25px;
   width:35px;
+}
+.search-icon:hover, .nav-icon:hover {
+  transition: all 0.2s ease 0s;
+  box-shadow: 0px 0px 0px 3px rgba(215, 214, 209, 1);
 }
 .search-icon:before, .nav-icon:before {
   color:#4e4a47;
