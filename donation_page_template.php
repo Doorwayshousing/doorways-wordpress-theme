@@ -28,16 +28,31 @@ Template Name: Donation Page
  <div class="wrapper text-center">
      <div id="customFormWrapper">
          <div id="donationHeader">
-             <div class="donate-header-text">donate</div>
-             <div class="donate-paragraph-text">You can help. We encourage you to give whatever is within your means. DOORWAYS provides direct assistance to nearly 3,000 people anually through a remarkable continuum of care. Your taxable donation will go a long way toward helping us provide safe, affordable housing for people living with and affected by HIV/AIDS. Please help us open the doors to more clients. <i>DOORWAYS, an IRC 501(c)3 tax-exempt Missouri nonprofit corporation, is registered to solicit funds for charitable purposes in Missouri and Illinois. DOORWAYS only solicits such charitable contributions in MO and IL.</i>
+             <div class="donate-header-text"><?php the_title(); ?></div>
+             <div class="donate-paragraph-text">
+                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                     <?php the_content(); ?>
+                 <?php endwhile; endif; ?>
              </div>
+             <div class="cover"></div>
          </div>
          <div id="donation-breakdown">
              <div class="breakdown-text">How will my donation help?</div>
              <div class="percentage-section">
-                 <div class="percent-section-breakdown">housing</div>
+                 <!-- <div class="percent-section-breakdown">housing</div>
                  <div class="percent-section-breakdown">food</div>
-                 <div class="percent-section-breakdown">supplies</div>
+                 <div class="percent-section-breakdown">supplies</div> -->
+
+                 <div class="huge-chartbox">
+                   <div id="failureChart1" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;50&quot;,&quot;#19C5F5&quot;],  &quot;1&quot;:[&quot;50&quot;,&quot;50&quot;,&quot;#ecebeb&quot;] }" data-chart-text="50%" data-chart-caption="Housing" data-chart-initial-rotate="180">
+                   </div>
+                   <div id="failureChart2" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;30&quot;,&quot;#19C5F5&quot;],  &quot;1&quot;:[&quot;30&quot;,&quot;70&quot;,&quot;#ecebeb&quot;] }" data-chart-text="30%" data-chart-caption="Food" data-chart-initial-rotate="180">
+                   </div>
+                   <div id="failureChart3" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;20&quot;,&quot;#19C5F5&quot;],  &quot;1&quot;:[&quot;20&quot;,&quot;80&quot;,&quot;#ecebeb&quot;] }" data-chart-text="20%" data-chart-caption="Supplies" data-chart-initial-rotate="180">
+                   </div>
+                 </div>
+
+
              </div>
              <div class="breakdown-text-2">100% Tax-deductible gift contributes directly to the compassionate care of hundres of adults and children living with HIV/AIDS.</div>
          </div>
@@ -56,7 +71,7 @@ Template Name: Donation Page
              </div>
              <button class="paymentButton" id="payOnceButton">ONCE</button>
              <button class="paymentButton" id="payMonthlyButton">MONTHLY</button>
-             <div class="other-payment-options">PAY BY PERESONAL CHECK <br/>PAY BY BUSINESS CHECK
+             <div class="other-payment-options"><a href="">PAY BY PERESONAL CHECK</a> <br/><a href="#">PAY BY BUSINESS CHECK</a>
              </div>
 
              <!-- <div class="form-group billing" id="name-group">
@@ -102,13 +117,13 @@ Template Name: Donation Page
 
              <button class="btn btn-primary" id="paymentButton">Pay Now</button> -->
          </form>
-         <br />
+         <!-- <br />
          <h5>Results:</h5>
          <p style="width:100%"><pre><code id="paymentResponse">The response will appear here as JSON, and in your browser console as a JavaScript object.</code></pre></p>
      </div>
      <div id="paymentResponse" class="alert alert-success" role="alert"></div>
  </div>
 
- <br /><br />
+ <br /><br /> -->
 
  <?php get_footer(); ?>
