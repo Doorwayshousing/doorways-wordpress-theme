@@ -7,6 +7,7 @@ Version: 1.0
 body {
   margin:0;
   padding:0;
+  font-family:'Roboto','Helvetica',sans-serif;
 }
 ul {
   margin:0;
@@ -45,22 +46,51 @@ li {
 .nav-icon:before {
     content:'\f0c9';
 }
+.nav-icon:hover {
+    cursor: pointer;
+}
 .nav-item {
     display:inline-block;
 }
 .nav-container {
-    background-color: #4E4A47;
+    background: rgba(78,74,71,.9);
     color: white;
     height: 100%;
+    max-width: 0;
+    padding: 0;
     position: absolute;
     right: 0;
     text-align: center;
     transition: all 0.2s ease 0s;
-    width: 0;
 }
 .nav-is-open {
-    width:220px;
+    max-width: 700px;
+    padding: 0 7%;
 }
 .nav-is-closed {
     display: none;
+}
+#menu-nav li {
+    margin-top:15px;
+}
+#menu-nav li a {
+    transition: all 0.2s ease 0s;
+    text-decoration: none;
+    color:#bebcb7;
+    text-transform: uppercase;
+}
+#menu-nav li a:hover {
+    transition: all 0.2s ease 0s;
+    color:#fff;
+    cursor: pointer;
+}
+#menu-nav li a:selected {
+    color:#fff;
+}
+
+/* ----------- Our breakpoints - use in each .css file as needed ----------- */
+@media screen and (max-width: 800px) {
+    .nav-is-open {
+        width: 100%;
+    }
 }
