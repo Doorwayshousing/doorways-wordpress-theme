@@ -109,20 +109,17 @@
             var d = $(this);
             var id = $(this).attr('id');
             var max = $(this).data('chart-max');
+            var text = '',
+                caption = '',
+                rotate = 0;
             if ($(this).data('chart-text')) {
-                var text = $(this).data('chart-text');
-            } else {
-                var text = "";
+                text = $(this).data('chart-text');
             }
             if ($(this).data('chart-caption')) {
-                var caption = $(this).data('chart-caption');
-            } else {
-                var caption = "";
+                caption = $(this).data('chart-caption');
             }
             if ($(this).data('chart-initial-rotate')) {
-                var rotate = $(this).data('chart-initial-rotate');
-            } else {
-                var rotate = 0;
+                rotate = $(this).data('chart-initial-rotate');
             }
             var segments = $(this).data('chart-segments');
 
