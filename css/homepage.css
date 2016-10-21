@@ -1,0 +1,27 @@
+.homepage-banner {
+    background: url('../img/homepage-banner.jpg') no-repeat center;
+    background-size: cover;
+    height:350px;
+    position: relative;
+    width:100%;
+}
+.homepage-banner .cover {
+    background: linear-gradient(to right,#bfd71f 0%,#50b2f1 100%);
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.homepage-banner .tagline {
+    background:rgba(255,255,255,0.7);
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    width: 300px;
+}
+.tagline img {
+    margin:20px;
+    width:80%;
+}

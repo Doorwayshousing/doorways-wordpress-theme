@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/common.css"/>
+<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/nav.css"/>
 <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/homepage.css"/>
 <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/donationpage.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -33,3 +34,31 @@
         'theme_location' => 'main-navigation',
         'container_class' => 'nav-container' ) );
     ?>
+    <div class="sub-header">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/doorwaysLogo.png" alt="" />
+            </div>
+        </div>
+        <div class="info-container">
+            <div class="contact">
+                <ul>
+                    <li class="address-icon">
+                        <i class="fa fa-phone"></i>
+                    </li>
+                    <li>(314) 535-1919</li>
+                </ul>
+            </div>
+            <div class="address">
+                <ul>
+                    <li class="address-icon">
+                        <i class="fa fa-map-marker"></i>
+                    </li>
+                    <li>
+                        <div>4385 Maryland Avenue</div>
+                        <div>Saint Lous, MO 63108</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
