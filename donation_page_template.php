@@ -77,6 +77,6 @@ Template Name: Donation Page
      </div>
      <div id="paymentResponse" class="alert alert-success" role="alert"></div>
  </div>
- <br /><br /><br />
+ <br /><br />
 
  <?php get_footer(); ?>
