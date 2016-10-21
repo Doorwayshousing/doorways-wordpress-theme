@@ -11,6 +11,7 @@
     display:inline-block;
 }
 .nav-container {
+    transition: all 0.2s ease 0s;
     background: rgba(78,74,71,.9);
     color: white;
     height: 100%;
@@ -20,13 +21,18 @@
     right: 0;
     text-align: center;
     transition: all 0.2s ease 0s;
+    z-index: 2;
 }
 .nav-is-open {
-    z-index: 2;
+    transition: all 0.2s ease 0s;
     max-width: 700px;
     padding: 0 7%;
 }
 .nav-is-closed {
+    transition: all 0.2s ease 0s;
+    display: none;
+}
+.menu {
     display: none;
 }
 .menu li {
@@ -132,6 +138,7 @@
 /* ----------- Our breakpoints - use in each .css file as needed ----------- */
 @media screen and (max-width: 800px) {
     .nav-is-open {
+        transition: all 0.2s ease 0s;
         width: 100%;
     }
     .logo {
@@ -151,10 +158,12 @@
     .contact > ul {
         transition: all 0.2s ease 0s;
         right:inherit;
-        top:35px;
+        top:45px;
+        left:-20px;
     }
     .address > ul {
         transition: all 0.2s ease 0s;
-        top: 10px;
+        top: 5px;
+        left: -20px;
     }
 }
