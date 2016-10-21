@@ -3,20 +3,17 @@
     color: white;
     opacity: 0;
 }
+.form-group {
+    margin-bottom: 10px;
+}
+.control-label{
+    width: 20%;
+}
 .form-control{
     width: 50%;
 }
 #customFormWrapper{
     padding: 15px;
-}
-#customFormWrapper.static{
-    background: repeating-linear-gradient(
-        -45deg,
-        #3c424f,
-        #3c424f 10px,
-        #f5f5f5 10px,
-        #f5f5f5 20px
-        );
 }
 #customFormWrapper.animated{
     background-image: repeating-linear-gradient(-45deg, #3c424f, #3c424f 10px, #f5f5f5 10px, #f5f5f5 20px);
