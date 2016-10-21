@@ -2,7 +2,7 @@
     margin:0;
     padding: 30px;
     color: #fff;
-    background: url('../img/donate-banner.jpg') center center;
+    background: url('../../img/donate-banner.jpg') center center;
     position: relative;
     min-height: 150px;
     display: flex;
