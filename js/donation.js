@@ -17,12 +17,10 @@
             requestId: "<?php echo $requestId; ?>",
             amount: "<?php echo $request['amount']; ?>",
         });
+
         $("#paymentButton").click(function() {
             $(this).prop('disabled', true).removeClass("not-disabled");
             $("#myCustomForm :input").prop('disabled', true);
-
-            $("#customFormWrapper").addClass("animated").removeClass("static");
-            $("#customFormWrapper").fadeTo(2000, 0.1);
 
             // we'll add on the billing data that we collected
             $CORE.setBilling({
@@ -47,7 +45,6 @@
                 );
                 $("#customFormWrapper").hide();
                 $("#paymentResponse").fadeTo(1000, 1);
-
             });
         });
 
@@ -55,6 +52,7 @@
             toggleClasses($(this).val().length > 0, $(this).parent());
             checkForCompleteAndValidForm();
         });
+
         $("#cc_number").blur(function() {
             var cc = $("#cc_number").val();
             // we'll format the credit card number with dashes
@@ -65,6 +63,7 @@
             toggleClasses(isValidCC, $("#cc-group"));
             checkForCompleteAndValidForm();
         });
+
         $("#cc_expiration").blur(function() {
             var exp = $("#cc_expiration").val();
             exp = $FORMATTING.formatExpirationDateInput(exp, '/');
@@ -73,6 +72,7 @@
             toggleClasses(isValidExp, $("#exp-group"));
             checkForCompleteAndValidForm();
         });
+
         $("#cc_cvv").blur(function() {
             var cvv = $("#cc_cvv").val();
             cvv = cvv.replace(/\D/g,'');
@@ -81,6 +81,7 @@
             toggleClasses(isValidCVV, $("#cvv-group"));
             checkForCompleteAndValidForm();
         });
+
         function toggleClasses(isValid, obj) {
             if (isValid) {
                 obj.addClass("has-success").removeClass("has-error");
@@ -90,6 +91,7 @@
                 obj.children(".help-block").text("Invalid");
             }
         }
+
         function checkForCompleteAndValidForm() {
             var isValidBilling = true;
             $.each($(".billing"), function(){ isValidBilling = isValidBilling && $(this).hasClass("has-success"); });

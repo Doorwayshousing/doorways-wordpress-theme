@@ -6,7 +6,7 @@ Template Name: Donation Page
     require('shared.php');
     $nonces = getNonces();
     $requestType = "payment";
-    $requestId = "Invoice" . rand(0, 1000); // this'll be used as the order number
+    $requestId = "Donation#" . rand(0, 1000); // this'll be used as the order number
     $req = [
         "merchantId" => $merchant['ID'],
         "merchantKey" => $merchant['KEY'], // don't include the Merchant Key in the JavaScript initialization!
@@ -20,7 +20,7 @@ Template Name: Donation Page
         "preAuth" => $request['preAuth'] // defaults to false
     ];
     $authKey = getAuthKey(json_encode($req), $developer['KEY'], $nonces['salt'], $nonces['iv']);
-    ?>
+?>
 
  <div class="wrapper text-center">
      <div id="customFormWrapper">
@@ -66,7 +66,7 @@ Template Name: Donation Page
                  <span class="help-block"></span>
              </div>
 
-             <button class="btn btn-primary" id="paymentButton">Pay Now</button>
+             <button class="btn btn-primary" id="paymentButton">Donate</button>
          </form>
          <br />
          <h5>Results:</h5>
