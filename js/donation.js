@@ -44,17 +44,17 @@
                 console.log($RESPONSE.getResponse());
                 $("#paymentResponse").text(
                     $RESPONSE.getTransactionSuccess() ? "APPROVED" : "DECLINED"
-                )
+                );
                 $("#customFormWrapper").hide();
                 $("#paymentResponse").fadeTo(1000, 1);
 
-            })
-        })
+            });
+        });
 
         $(".billing .form-control").blur(function(){
             toggleClasses($(this).val().length > 0, $(this).parent());
             checkForCompleteAndValidForm();
-        })
+        });
         $("#cc_number").blur(function() {
             var cc = $("#cc_number").val();
             // we'll format the credit card number with dashes
@@ -64,7 +64,7 @@
             isValidCC = $VALIDATION.isValidCreditCard(cc);
             toggleClasses(isValidCC, $("#cc-group"));
             checkForCompleteAndValidForm();
-        })
+        });
         $("#cc_expiration").blur(function() {
             var exp = $("#cc_expiration").val();
             exp = $FORMATTING.formatExpirationDateInput(exp, '/');
@@ -72,7 +72,7 @@
             isValidExp = $VALIDATION.isValidExpirationDate(exp);
             toggleClasses(isValidExp, $("#exp-group"));
             checkForCompleteAndValidForm();
-        })
+        });
         $("#cc_cvv").blur(function() {
             var cvv = $("#cc_cvv").val();
             cvv = cvv.replace(/\D/g,'');
@@ -80,7 +80,7 @@
             isValidCVV = $VALIDATION.isValidCvv(cvv, $("#cc_number").val()[0]);
             toggleClasses(isValidCVV, $("#cvv-group"));
             checkForCompleteAndValidForm();
-        })
+        });
         function toggleClasses(isValid, obj) {
             if (isValid) {
                 obj.addClass("has-success").removeClass("has-error");
@@ -92,7 +92,7 @@
         }
         function checkForCompleteAndValidForm() {
             var isValidBilling = true;
-            $.each($(".billing"), function(){ isValidBilling = isValidBilling && $(this).hasClass("has-success") });
+            $.each($(".billing"), function(){ isValidBilling = isValidBilling && $(this).hasClass("has-success"); });
 
             // assuming most people fill out the form from top-to-bottom,
             // checking it from bottom-to-top takes advantage of short-circuiting
