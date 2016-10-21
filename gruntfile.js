@@ -10,8 +10,9 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint']
+      files: ['js/**.js',
+      'css/**.css', '**.php', '<%= jshint.files %>'],
+      tasks: ['jshint', 'build']
     },
     concat: {
       js: {
@@ -35,7 +36,7 @@ module.exports = function(grunt) {
         src: 'dist/css/custom.css',
         dest: 'dist/css/custom.min.css'
       }
-    }
+  }
   });
 
   grunt.loadNpmTasks('grunt-css');
@@ -47,5 +48,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['jshint']);
   grunt.registerTask('build', ['jshint', 'concat', 'uglify', 'cssmin']);
+  grunt.registerTask('serve', ['build', 'watch']);
 
 };
