@@ -1,10 +1,12 @@
 <?php
-function wpb_custom_new_menu() {
-  register_nav_menus(
-    array(
-      'main-navigation' => __( 'Main Navigation' ),
-      'extra-menu' => __( 'Extra Menu' )
-    )
-  );
+function doorways_setup() {
+    register_nav_menus(
+      array(
+        'main-navigation' => __( 'Main Navigation' ),
+        'extra-menu' => __( 'Extra Menu' )
+      )
+    );
+    add_theme_support( 'html5', array( 'search-form' ) );
 }
-add_action( 'init', 'wpb_custom_new_menu' );
+
+add_action( 'init', 'doorways_setup');
