@@ -11,6 +11,7 @@
     display:inline-block;
 }
 .nav-container {
+    transition: all 0.2s ease 0s;
     background: rgba(78,74,71,.9);
     color: white;
     height: 100%;
@@ -23,10 +24,15 @@
     z-index: 2;
 }
 .nav-is-open {
+    transition: all 0.2s ease 0s;
     max-width: 700px;
     padding: 0 7%;
 }
 .nav-is-closed {
+    transition: all 0.2s ease 0s;
+    display: none;
+}
+.menu {
     display: none;
 }
 .menu li {
@@ -45,4 +51,119 @@
 }
 .menu li a:selected {
     color:#fff;
+}
+.sub-header {
+    background: #d7d8d2;
+    height: 160px;
+    position: relative;
+}
+.sub-header > div {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    bottom:0;
+}
+.info-container {
+    transition: all 0.2s ease 0s;
+    right:0;
+    display:flex;
+    flex-direction: row;
+    font-size:14px;
+}
+.info-container > div {
+    transition: all 0.2s ease 0s;
+    flex: 1;
+    position: relative;
+}
+.contact > ul {
+    transition: all 0.2s ease 0s;
+    position: absolute;
+    top: 60px;
+    right:0;
+    margin-right:20px;
+}
+.contact ul li {
+    display: inline-block;
+    vertical-align: middle;
+    color:#85837f;
+}
+.info-container div ul li:first-child {
+    margin-right: 6px;
+}
+.address > ul {
+    transition: all 0.2s ease 0s;
+    position: absolute;
+    top: 60px;
+}
+.address ul li {
+    display: inline-block;
+    vertical-align: top;
+    color:#85837f;
+}
+.address-icon {
+    background: #85837f none repeat scroll 0 0;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    box-shadow: 0px 0px 0px 3px rgba(133, 131, 127, .4);
+    color: #ffffff!important;
+    position: relative;
+}
+.address-icon i {
+    left: 7px;
+    position: absolute;
+    top: 6px;
+}
+.address .address-icon i {
+    left:9px;
+}
+.logo {
+    transition: all 0.2s ease 0s;
+    background: #ffffff;
+    height: 200px;
+    left: 16%;
+    position: absolute;
+    top: 15px;
+    width: 200px;
+    z-index:1;
+    box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, .3);
+    border-radius: 50%;
+}
+.logo > img {
+    display: block;
+    margin: 15px auto 0;
+    width: 60%;
+}
+
+/* ----------- Our breakpoints - use in each .css file as needed ----------- */
+@media screen and (max-width: 800px) {
+    .nav-is-open {
+        transition: all 0.2s ease 0s;
+        width: 100%;
+    }
+    .logo {
+        transition: all 0.2s ease 0s;
+        height: 100px;
+        width: 100px;
+        top:30px;
+    }
+    .logo > img {
+        transition: all 0.2s ease 0s;
+        margin: 10px auto 0;
+    }
+    .info-container {
+        transition: all 0.2s ease 0s;
+        flex-direction:column;
+    }
+    .contact > ul {
+        transition: all 0.2s ease 0s;
+        right:inherit;
+        top:45px;
+        left:-20px;
+    }
+    .address > ul {
+        transition: all 0.2s ease 0s;
+        top: 5px;
+        left: -20px;
+    }
 }
