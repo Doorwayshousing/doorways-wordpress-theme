@@ -93,7 +93,6 @@
         function checkForCompleteAndValidForm() {
             var isValidBilling = true;
             $.each($(".billing"), function(){ isValidBilling = isValidBilling && $(this).hasClass("has-success"); });
-
             // assuming most people fill out the form from top-to-bottom,
             // checking it from bottom-to-top takes advantage of short-circuiting
             if (isValidCVV && isValidExp && isValidCC && isValidBilling) {
