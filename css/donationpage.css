@@ -1,5 +1,4 @@
 #donationHeader {
-    /*width: 100%;*/
     margin:0;
     padding: 30px;
     color: #fff;
@@ -25,10 +24,7 @@
     font-family: baskerville;
     font-size: 50px;
     border-right: 1px solid #fff;
-    /*padding-right: 30px;*/
     height: 75px;
-    /*position: absolute;*/
-    /*top: 80px;*/
     z-index: 5;
     flex:1;
     -webkit-flex: 1;  /* Safari 6.1+ */
@@ -38,10 +34,7 @@
 .donate-paragraph-text {
     font-family: baskerville;
     font-size: 16px;
-    /*margin: 0 20px;*/
-    /*position: absolute;*/
     z-index: 5;
-    /*left:205px;*/
     flex:8 1 0;
     -webkit-flex: 8 1 0;  /* Safari 6.1+ */
     -ms-flex: 8 1 0;  /* IE 10 */
@@ -76,7 +69,6 @@
     font-family: baskerville;
     font-size: 20px;
     text-align: center;
-    /*display: inline-block;*/
 }
 
 #paymentResponse.alert{
@@ -102,11 +94,10 @@ select {
     width: 75%;
     font-size: 16px;
     border: 1px solid #ccc;
-    height: 40px;
+    height: 50px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    /*color: border: 1px solid #ccc;*/
     color: #85837f;
     font-size: 16px;
     border-radius: 10px;
@@ -144,7 +135,6 @@ select {
     text-align: center;
     padding: 40px;
     border-radius: 10px;
-    /*font-family: "Lucida Console", Monaco, monospace;*/
 }
 
 .form-header {
@@ -239,7 +229,7 @@ select {
   vertical-align: middle;
   font-family: "Open Sans";
   font-weight: 300;
-  color: #616161;
+  color: #4a1223;
   font-size: 39.1104px;
   top: 50%;
   margin-top: -20px;
@@ -258,10 +248,9 @@ select {
 .huge-chartbox span.donut-caption {
   display: block;
   text-align: center;
-  font-family: "Open Sans";
-  color: #616161;
-  font-size: 15.40740741px;
-  font-weight: 600;
+  font-family: "baskerville";
+  color: #4a1223;
+  font-size: 16px;
   cursor: default;
   margin: 0 auto;
 }
