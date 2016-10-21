@@ -11,8 +11,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/common.css"/>
 <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/homepage.css"/>
+<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/donationpage.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/nav.js"></script>
+<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/donation.js"></script>
 
 <? wp_head(); ?>
 </head>
