@@ -6,7 +6,7 @@ Template Name: Donation Page
     require('shared.php');
     $nonces = getNonces();
     $requestType = "payment";
-    $requestId = "Donation#" . rand(0, 1000); // this'll be used as the order number
+    $requestId = "Invoice" . rand(0, 1000); // this'll be used as the order number
     $req = [
         "merchantId" => $merchant['ID'],
         "merchantKey" => $merchant['KEY'], // don't include the Merchant Key in the JavaScript initialization!
@@ -20,7 +20,7 @@ Template Name: Donation Page
         "preAuth" => $request['preAuth'] // defaults to false
     ];
     $authKey = getAuthKey(json_encode($req), $developer['KEY'], $nonces['salt'], $nonces['iv']);
-?>
+    ?>
 
  <div class="wrapper text-center">
      <div id="customFormWrapper">
@@ -36,19 +36,15 @@ Template Name: Donation Page
          <div id="donation-breakdown">
              <div class="breakdown-text">How will my donation help?</div>
              <div class="percentage-section">
-                 <!-- <div class="percent-section-breakdown">housing</div>
-                 <div class="percent-section-breakdown">food</div>
-                 <div class="percent-section-breakdown">supplies</div> -->
 
                  <div class="huge-chartbox">
-                   <div id="failureChart1" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;50&quot;,&quot;#19C5F5&quot;],  &quot;1&quot;:[&quot;50&quot;,&quot;50&quot;,&quot;#ecebeb&quot;] }" data-chart-text="50%" data-chart-caption="Housing" data-chart-initial-rotate="180">
+                   <div id="percent-section-breakdown" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;50&quot;,&quot;#19C5F5&quot;],  &quot;1&quot;:[&quot;50&quot;,&quot;50&quot;,&quot;#ecebeb&quot;] }" data-chart-text="50%" data-chart-caption="Housing" data-chart-initial-rotate="180">
                    </div>
-                   <div id="failureChart2" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;30&quot;,&quot;#c4cb30&quot;],  &quot;1&quot;:[&quot;30&quot;,&quot;70&quot;,&quot;#ecebeb&quot;] }" data-chart-text="30%" data-chart-caption="Food" data-chart-initial-rotate="180">
+                   <div id="percent-section-breakdown2" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;30&quot;,&quot;#c4cb30&quot;],  &quot;1&quot;:[&quot;30&quot;,&quot;70&quot;,&quot;#ecebeb&quot;] }" data-chart-text="30%" data-chart-caption="Food" data-chart-initial-rotate="180">
                    </div>
-                   <div id="failureChart3" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;20&quot;,&quot;#f57436&quot;],  &quot;1&quot;:[&quot;20&quot;,&quot;80&quot;,&quot;#ecebeb&quot;] }" data-chart-text="20%" data-chart-caption="Supplies" data-chart-initial-rotate="180">
+                   <div id="percent-section-breakdown3" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;20&quot;,&quot;#f57436&quot;],  &quot;1&quot;:[&quot;20&quot;,&quot;80&quot;,&quot;#ecebeb&quot;] }" data-chart-text="20%" data-chart-caption="Supplies" data-chart-initial-rotate="180">
                    </div>
                  </div>
-
 
              </div>
              <div class="breakdown-text-2">100% Tax-deductible gift contributes directly to the compassionate care of hundres of adults and children living with HIV/AIDS.</div>
@@ -111,7 +107,8 @@ Template Name: Donation Page
                  <input type="text" class="form-control" id="cc_cvv" value="" placeholder="">
                  <span class="help-block"></span>
              </div>
-             <button class="btn btn-primary" id="paymentButton">Donate</button>
+
+             <button class="btn btn-primary" id="paymentButton">Pay Now</button> -->
          </form>
          <!-- <br />
          <h5>Results:</h5>

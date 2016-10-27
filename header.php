@@ -10,14 +10,10 @@
 <link rel="icon" type="image/svg+xml" href="<insert svg file link here>">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/common.css"/>
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/nav.css"/>
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/homepage.css"/>
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/donationpage.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src="https://www.sagepayments.net/pay/1.0.0/js/pay.min.js"></script>
-<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/nav.js"></script>
-<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/donation.js"></script>
+<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/css/custom.min.css">
+<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/js/custom.min.js"></script>
 
 <? wp_head(); ?>
 </head>
@@ -29,11 +25,23 @@
         <li class="nav-icon"></li>
       </ul>
     </div>
-    <?php
-    wp_nav_menu( array(
-        'theme_location' => 'main-navigation',
-        'container_class' => 'nav-container' ) );
-    ?>
+    <div class="side-nav">
+        <?php
+        wp_nav_menu( array(
+            'theme_location' => 'main-navigation',
+            'container_class' => 'nav-container' ) );
+        ?>
+        <div class="search-container">
+            <form style="display:none;" role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+                <input type="search" class="search-field"
+                    placeholder="Search"
+                    value="<?php echo get_search_query() ?>" name="s"
+                    title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+                <input type="submit" class="search-submit"
+                    value="<?php echo esc_attr_x( 'Go', 'submit button' ) ?>" />
+            </form>
+        </div>
+    </div>
     <div class="sub-header">
         <div class="logo-container">
             <div class="logo">
