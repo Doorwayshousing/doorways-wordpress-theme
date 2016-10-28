@@ -15,7 +15,7 @@ Doorways.Nav = (function ($) {
             searchIsClosedClass: 'search-is-closed',
             navIsOpenClass: 'nav-is-open',
             navIsClosedClass: 'nav-is-closed',
-            menu: $('.menu')
+            menu: $('.side-menu')
         };
         o.navIcon.click(handleNavClick);
         o.searchIcon.click(handleSearchClick);
@@ -38,7 +38,6 @@ Doorways.Nav = (function ($) {
     function handleSearchClick() {
         o.navContainer.removeClass(o.navIsOpenClass);
         if (!o.searchContainer.hasClass(o.searchIsOpenClass)) {
-            console.log('in here');
             o.menu.hide();
             o.searchForm.show();
             o.searchContainer.addClass(o.searchIsOpenClass);

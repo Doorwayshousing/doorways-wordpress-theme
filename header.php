@@ -20,7 +20,12 @@
 
 <body>
     <div id="top-nav">
-      <ul>
+        <?php
+        wp_nav_menu( array(
+            'theme_location' => 'main-navigation',
+            'container_class' => 'top-bar-container' ) );
+        ?>
+      <ul class="right-actions">
         <li class="search-icon"></li>
         <li class="nav-icon"></li>
       </ul>

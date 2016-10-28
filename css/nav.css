@@ -1,5 +1,10 @@
+#top-nav {
+    min-height: 36px;
+}
 .nav-icon {
-    margin-right:25px;
+    transition: all 0.2s ease 0s;
+    display: none;
+    margin-right:0;
 }
 .nav-icon:before {
     content:'\f0c9';
@@ -9,6 +14,9 @@
 }
 .nav-item {
     display:inline-block;
+}
+.search-icon {
+    transition: all 0.2s ease 0s;
 }
 .nav-container {
     transition: all 0.2s ease 0s;
@@ -26,30 +34,66 @@
 .nav-is-open {
     transition: all 0.2s ease 0s;
     max-width: 700px;
-    padding: 0 7%;
+    padding: 0;
 }
 .nav-is-closed {
     transition: all 0.2s ease 0s;
     display: none;
 }
-.menu {
+.side-menu {
     display: none;
 }
-.menu li {
-    margin-top:15px;
+.right-actions {
+    position: absolute;
+    right:0;
+    top:10px;
 }
-.menu li a {
+.top-bar-container {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.top-bar-container .menu {
+    display: inherit;
+    margin-right:85px;
+}
+.top-bar-container .menu li {
+    display: inline-block;
+    margin: 10px 0;
+}
+.top-bar-container .menu li:after {
+    content: ' / ';
+    color: #ffffff;
+}
+.top-bar-container .menu li a {
     transition: all 0.2s ease 0s;
     text-decoration: none;
     color:#bebcb7;
     text-transform: uppercase;
 }
-.menu li a:hover {
+.top-bar-container .menu li a:hover {
     transition: all 0.2s ease 0s;
     color:#fff;
     cursor: pointer;
 }
-.menu li a:selected {
+.top-bar-container .menu li:last-child:after {
+    content: '';
+}
+.side-nav .menu li {
+    margin-top:15px;
+}
+.side-nav .menu li a {
+    transition: all 0.2s ease 0s;
+    text-decoration: none;
+    color:#bebcb7;
+    text-transform: uppercase;
+}
+.side-nav .menu li a:hover {
+    transition: all 0.2s ease 0s;
+    color:#fff;
+    cursor: pointer;
+}
+.side-nav .menu li a:selected {
     color:#fff;
 }
 .sub-header {
@@ -137,9 +181,24 @@
 
 /* ----------- Our breakpoints - use in each .css file as needed ----------- */
 @media screen and (max-width: 800px) {
+    .nav-icon {
+        transition: all 0.2s ease 0s;
+        display: inherit;
+        position: absolute;
+        right: 20px;
+        top: 0;
+    }
+    .search-icon {
+        transition: all 0.2s ease 0s;
+        margin-right:75px;
+    }
     .nav-is-open {
         transition: all 0.2s ease 0s;
-        width: 100%;
+        max-width: 700px;
+    }
+    .top-bar-container {
+        transition: all 0.2s ease 0s;
+        display: none;
     }
     .logo {
         transition: all 0.2s ease 0s;
