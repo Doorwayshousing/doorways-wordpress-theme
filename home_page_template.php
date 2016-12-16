@@ -26,20 +26,23 @@ Template Name: Doorways Home Page
          </div>
      </div>
      <div class="ne-body">
-         <ul>
+         <ul class="ne-holder">
                  <?php
             $args = array( 'posts_per_page' => 3, 'category_name' => 'News,Events' );
             $myposts = get_posts( $args );
             foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-                 <li style="background: url(<?php the_post_thumbnail_url('medium');?>)no-repeat center center; background-size:cover;">
-                     <a href="<?php the_permalink(); ?>">
-                <div class="full-post-link"></div>
-                 </a>
-                    <div class="category-holder">
-                      <div><?php the_title(); ?></div>
-                      <?php the_content(); ?>
-                    </div>
-                  </a>
+                 <li class="<?php $category = get_the_category(); $firstCategory = $category[0]->cat_name; echo $firstCategory; ?>">
+                     <div class="badge">
+                         <div class="badge-icon"></div>
+                     </div>
+                     <div class="radial" style="background: url(<?php the_post_thumbnail_url('medium');?>)no-repeat center center; background-size:cover;">
+                         <a href="<?php the_permalink(); ?>">
+                             <div class="post-title">
+                                 <div><?php the_title(); ?></div>
+                                 <!-- <?php the_content(); ?> -->
+                             </div>
+                         </a>
+                     </div>
                  </li>
              <?php endforeach;
          wp_reset_postdata();?>

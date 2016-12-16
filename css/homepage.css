@@ -81,9 +81,136 @@
     width: 60%;
 }
 .ne-header {
-    display: inline-block;
+    display: flex;
     height: 60px;
     width: 100%;
+}
+.news-icon {
+    align-self: center;
+    background: #e76f21 none repeat scroll 0 0;
+    border: 1px solid #e76f21;
+    border-radius: 50%;
+    color: #fff;
+    height: 18px;
+    margin-left: 20px;
+    padding: 5px;
+    width: 18px;
+    position: relative;
+}
+.news-icon i {
+    position: absolute;
+    top:6px;
+}
+.events-icon {
+    align-self: center;
+    background: #45b0f0 none repeat scroll 0 0;
+    border: 1px solid #45b0f0;
+    border-radius: 50%;
+    color: #fff;
+    height: 18px;
+    margin-left: 5px;
+    padding: 5px;
+    width: 18px;
+    position: relative;
+}
+.events-icon i {
+    position: absolute;
+    top: 5px;
+    left:7px;
+}
+.ne-title {
+    align-self: center;
+    padding: 5px;
+    font-family: 'Baskerville Regular', 'Roboto', 'Helvetica', sans-serif;
+}
+.ne-holder {
+    display: flex;
+}
+.ne-holder > li {
+    flex:1;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+}
+.radial {
+    border-radius: 50%;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+}
+.radial > a {
+    background-color: #45b0f0;
+    height: 80px;
+    position: absolute;
+    top: 36%;
+    width: 100%;
+    opacity: 0.8;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+.post-title {
+    background-color: #45b0f0;
+    height: 70px;
+    position: absolute;
+    top: 36%;
+    width: 100%;
+    text-align: center;
+}
+.Events .badge {
+    height: 300px;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: 300px;
+}
+.Events .badge .badge-icon:before {
+    background: #45b0f0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #ffffff;
+    content: "\f073";
+    font-family: fontawesome;
+    font-size: 1.2em;
+    height: 50px;
+    line-height: 2.4em;
+    position: absolute;
+    right: 40px;
+    text-align: center;
+    top: 2px;
+    width: 50px;
+    z-index: 9;
+}
+.News .badge {
+    height: 300px;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: 300px;
+}
+.News .badge .badge-icon:before {
+    background: #E76F21;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #ffffff;
+    content: "\f1ea";
+    font-family: fontawesome;
+    font-size: 1.2em;
+    height: 50px;
+    line-height: 2.4em;
+    position: absolute;
+    right: 40px;
+    text-align: center;
+    top: 2px;
+    width: 50px;
+    z-index: 9;
 }
 
 /* ----------- Our breakpoints - use in each .css file as needed ----------- */
