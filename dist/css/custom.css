@@ -730,6 +730,14 @@ select {
 }
 
 /* ----------- Our breakpoints - use in each .css file as needed ----------- */
+@media screen and (max-width: 1100px) {
+    .ne-holder {
+        flex-direction:column;
+    }
+    .ne-holder > li {
+        margin: 0 auto 25px;
+    }
+}
 @media screen and (max-width: 800px) {
     .nav-is-open {
         width: 100%;
