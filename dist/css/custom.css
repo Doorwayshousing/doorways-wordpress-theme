@@ -185,20 +185,34 @@ li {
 }
 
 .donate-heading{
-    font-size: 14px;
+    border-top: 1px solid #cdcdcd;
     color: #85837f;
     font-family: helvetica;
+    font-size: 14px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .donate-sub-heading{
-    font-size: 12px;
+    background-color: #f9f9f8;
     color: #85837f;
     font-family: helvetica;
+    font-size: 12px;
     margin: 15px;
+    padding: 15px;
+}
+
+.donate-name-section {
+    margin: 20px;
+}
+
+.donate-payment-section {
+    margin: 20px;
 }
 
 #payment-form {
     text-align: left;
+    margin: 0 10px;
 }
 
 .form-group {
@@ -224,7 +238,7 @@ li {
     border: 1px solid #cccccc;
     border-radius: 5px;
     height: 25px;
-    width: 75%;
+    width: 100%;
 }
 
 .amount {
