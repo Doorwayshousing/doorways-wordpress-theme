@@ -37,11 +37,11 @@
                 postalCode: $("#billing_zip").val()
             });
             var cc = $("#cc_number").val();
-            console.log(cc);
+            console.log("cc_number: " + cc);
             var exp = $("#cc_expiration").val();
-            console.log(exp);
+            console.log("cc_expiration: " + exp);
             var cvv = $("#cc_cvv").val();
-            console.log(cvv);
+            console.log("CVV: " + cvv);
 
             // run the payment
             $REQUEST.doPayment(cc, exp, cvv, function(resp) {
