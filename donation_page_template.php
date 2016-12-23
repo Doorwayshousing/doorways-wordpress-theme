@@ -26,6 +26,7 @@ Template Name: Donation Page
      <div id="customFormWrapper">
          <div id="donationHeader">
              <div class="donate-header-text"><?php the_title(); ?></div>
+             <div class="donate-header-border">&nbsp;</div>
              <div class="donate-paragraph-text">
                  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                      <?php the_content(); ?>
@@ -65,7 +66,6 @@ Template Name: Donation Page
              </div>
              <button class="paymentButton" id="payOnceButton">ONCE</button>
              <button class="paymentButton" id="payMonthlyButton">MONTHLY</button>
-
              <div class="form-group billing" id="name-group">
                  <label class="control-label">Name</label>
                  <input type="text" class="form-control" id="billing_name" value="" placeholder="">
@@ -86,27 +86,100 @@ Template Name: Donation Page
                  <input type="text" class="form-control" id="billing_state" value="" placeholder="">
                  <span class="help-block"></span>
              </div>
-             <div class="form-group billing" id="zip-group">
-                 <label class="control-label">Zip</label>
-                 <input type="text" class="form-control" id="billing_zip" value="" placeholder="">
-                 <span class="help-block"></span>
+         </div>
+        <div class="donate-heading">Your Information
+            <div class="donate-sub-heading">Name
+                <div class="donate-name-section">
+                    <div class="form-group name" id="firstname-group">
+                        <label class="control-label">First Name</label>
+                        <input type="text" class="form-donation-control" id="first-name" value="" placeholder="">
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="form-group name" id="lastname-group">
+                        <label class="control-label">Last Name</label>
+                       <input type="text" class="form-donation-control" id="last-name" value="" placeholder="">
+                       <span class="help-block"></span>
+                   </div>
+                   <div class="form-group name" id="suffix-group">
+                       <label class="control-label">Suffix</label>
+                      <input type="text" class="form-donation-control" id="suffix-name" value="" placeholder="">
+                      <span class="help-block"></span>
+                  </div>
+                  <div class="form-group" id="anonymous">
+                      <input type="radio" name="anonymous" value="anonymous" checked>Make donation anonymous</input>
+                  </div>
+            </div>
+          </div>
+      </div>
+          <div class="donate-heading">Your Payment Details
+              <div class="donate-sub-heading">Name on Card
+                  <div class="donate-payment-section">
+                      <div class="form-group billing" id="card-name">
+                          <label class="control-label">First Name</label>
+                          <input type="text" class="form-donation-control" id="billing_firstname" value="" placeholder="">
+                          <span class="help-block"></span>
+                      </div>
+                      <div class="form-group billing" id="card-name">
+                          <label class="control-label">Last Name</label>
+                          <input type="text" class="form-donation-control" id="billing_lastname" value="" placeholder="">
+                          <span class="help-block"></span>
+                      </div>
+                </div>
+              </div>
+              <div class="donate-sub-heading">Credit Card Information
+                  <div class="donate-payment-section">
+                      <div class="form-group cc" id="cc-group">
+                          <label class="control-label">Credit Card Number</label>
+                          <input type="text" class="form-donation-control" id="cc_number" value="" placeholder="">
+                          <span class="help-block"></span>
+                      </div>
+                      <div class="form-group cc" id="exp-group">
+                          <label class="control-label">Expiration Date</label>
+                          <input type="text" class="form-donation-control" id="cc_expiration" value="" placeholder="">
+                          <span class="help-block"></span>
+                      </div>
+                      <div class="form-group cc" id="cvv-group">
+                          <label class="control-label">CVV</label>
+                          <input type="text" class="form-donation-control" id="cc_cvv" value="" placeholder="">
+                          <span class="help-block"></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="donate-sub-heading">Billing Address
+                  <div class="donate-payment-section">
+                     <div class="form-group billing" id="address-group">
+                         <label class="control-label">Street Address</label>
+                         <input type="text" class="form-donation-control" id="billing_street" value="" placeholder="">
+                         <span class="help-block"></span>
+                     </div>
+                     <div class="form-group billing" id="city-group">
+                         <label class="control-label">City</label>
+                         <input type="text" class="form-donation-control" id="billing_city" value="" placeholder="">
+                         <span class="help-block"></span>
+                     </div>
+                     <div class="form-group billing" id="state-group">
+                         <label class="control-label">State</label>
+                         <input type="text" class="form-donation-control" id="billing_state" value="" placeholder="">
+                         <span class="help-block"></span>
+                     </div>
+                     <div class="form-group billing" id="zip-group">
+                         <label class="control-label">Zip</label>
+                         <input type="text" class="form-donation-control" id="billing_zip" value="" placeholder="">
+                         <span class="help-block"></span>
+                     </div>
+                 </div>
              </div>
-             <div class="form-group cc" id="cc-group">
-                 <label class="control-label">Credit Card Number</label>
-                 <input type="text" class="form-control" id="cc_number" value="" placeholder="">
-                 <span class="help-block"></span>
-             </div>
-             <div class="form-group cc" id="exp-group">
-                 <label class="control-label">Expiration Date</label>
-                 <input type="text" class="form-control" id="cc_expiration" value="" placeholder="">
-                 <span class="help-block"></span>
-             </div>
-             <div class="form-group cc" id="cvv-group">
-                 <label class="control-label">CVV</label>
-                 <input type="text" class="form-control" id="cc_cvv" value="" placeholder="">
-                 <span class="help-block"></span>
-             </div>
+<<<<<<< HEAD
              <button class="btn btn-primary" id="paymentButton">Donate</button>
+=======
+         </div>
+
+
+
+             <button class="btn btn-primary" id="paymentButton">Pay Now</button>
+         </div>
+     </div>
+>>>>>>> master
          </form>
          <br />
          <h5>Results:</h5>
