@@ -12,7 +12,7 @@
     ];
 
     $request = [
-        "postbackUrl" => "http://requestb.in/1eluhdk1", // https://requestb.in is great for playing with this
+        "postbackUrl" => "http://localhost:8888/payment-made/", // https://requestb.in is great for playing with this
         "environment" => "cert",
         "amount" => "1.00", // use 5.00 to simulate a decline
         "preAuth" => "false"

@@ -39,7 +39,6 @@ Template Name: Donation Page
                  <!-- <div class="percent-section-breakdown">housing</div>
                  <div class="percent-section-breakdown">food</div>
                  <div class="percent-section-breakdown">supplies</div> -->
-
                  <div class="huge-chartbox">
                    <div id="failureChart1" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;50&quot;,&quot;#19C5F5&quot;],  &quot;1&quot;:[&quot;50&quot;,&quot;50&quot;,&quot;#ecebeb&quot;] }" data-chart-text="50%" data-chart-caption="Housing" data-chart-initial-rotate="180">
                    </div>
@@ -48,8 +47,6 @@ Template Name: Donation Page
                    <div id="failureChart3" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;20&quot;,&quot;#f57436&quot;],  &quot;1&quot;:[&quot;20&quot;,&quot;80&quot;,&quot;#ecebeb&quot;] }" data-chart-text="20%" data-chart-caption="Supplies" data-chart-initial-rotate="180">
                    </div>
                  </div>
-
-
              </div>
              <div class="breakdown-text-2">100% Tax-deductible gift contributes directly to the compassionate care of hundres of adults and children living with HIV/AIDS.</div>
          </div>
@@ -68,10 +65,8 @@ Template Name: Donation Page
              </div>
              <button class="paymentButton" id="payOnceButton">ONCE</button>
              <button class="paymentButton" id="payMonthlyButton">MONTHLY</button>
-             <div class="other-payment-options"><a href="">PAY BY PERESONAL CHECK</a> <br/><a href="#">PAY BY BUSINESS CHECK</a>
-             </div>
 
-             <!-- <div class="form-group billing" id="name-group">
+             <div class="form-group billing" id="name-group">
                  <label class="control-label">Name</label>
                  <input type="text" class="form-control" id="billing_name" value="" placeholder="">
                  <span class="help-block"></span>
@@ -113,13 +108,13 @@ Template Name: Donation Page
              </div>
              <button class="btn btn-primary" id="paymentButton">Donate</button>
          </form>
-         <!-- <br />
+         <br />
          <h5>Results:</h5>
          <p style="width:100%"><pre><code id="paymentResponse">The response will appear here as JSON, and in your browser console as a JavaScript object.</code></pre></p>
      </div>
      <div id="paymentResponse" class="alert alert-success" role="alert"></div>
  </div>
 
- <br /><br /> -->
+ <br /><br />
 
  <?php get_footer(); ?>
