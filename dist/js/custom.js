@@ -1,11 +1,14 @@
     PayJS(['jquery', 'PayJS/Core', 'PayJS/Request', 'PayJS/Response', 'PayJS/Formatting', 'PayJS/Validation'],
     function($, $CORE, $REQUEST, $RESPONSE, $FORMATTING, $VALIDATION) {
         $("#paymentButton").prop('disabled', true);
+        console.log('function under PayJS.');
+        console.log($CORE);
         var isValidCC = false,
             isValidExp = false,
             isValidCVV = false;
 
         // when using REQUEST library, initialize via CORE instead of UI
+        console.log('console.log before CORE.Initialize');
         $CORE.Initialize({
             apiKey: "<?php echo $developer['ID']; ?>",
             environment: "<?php echo $request['environment']; ?>",
@@ -17,12 +20,13 @@
             requestId: "<?php echo $requestId; ?>",
             amount: "<?php echo $request['amount']; ?>",
         });
+        console.log('console.log after CORE.Initialize');
+        console.log($CORE);
+
         $("#paymentButton").click(function() {
+            console.log('paymentButton click.');
             $(this).prop('disabled', true).removeClass("not-disabled");
             $("#myCustomForm :input").prop('disabled', true);
-
-            $("#customFormWrapper").addClass("animated").removeClass("static");
-            $("#customFormWrapper").fadeTo(2000, 0.1);
 
             // we'll add on the billing data that we collected
             $CORE.setBilling({
@@ -33,29 +37,35 @@
                 postalCode: $("#billing_zip").val()
             });
             var cc = $("#cc_number").val();
+            console.log(cc);
             var exp = $("#cc_expiration").val();
+            console.log(exp);
             var cvv = $("#cc_cvv").val();
+            console.log(cvv);
 
             // run the payment
             $REQUEST.doPayment(cc, exp, cvv, function(resp) {
+                // console.log('REQUEST.doPayment');
                 // if you want to use the RESPONSE module with REQUEST, run the ajax response through tryParse...
                 $RESPONSE.tryParse(resp);
                 // ... which will initialize the RESPONSE module's getters
-                console.log($RESPONSE.getResponse());
+                console.log('$RESPONSE.getResponse: ' + $RESPONSE.getResponse());
                 $("#paymentResponse").text(
                     $RESPONSE.getTransactionSuccess() ? "APPROVED" : "DECLINED"
                 );
-                $("#customFormWrapper").hide();
-                $("#paymentResponse").fadeTo(1000, 1);
-
+                // $("#customFormWrapper").hide();
+                // $("#paymentResponse").fadeTo(1000, 1);
             });
         });
 
         $(".billing .form-control").blur(function(){
+            console.log('billing form-control blur');
             toggleClasses($(this).val().length > 0, $(this).parent());
             checkForCompleteAndValidForm();
         });
+
         $("#cc_number").blur(function() {
+            console.log('cc_number blur');
             var cc = $("#cc_number").val();
             // we'll format the credit card number with dashes
             cc = $FORMATTING.formatCardNumberInput(cc, '-');
@@ -65,7 +75,9 @@
             toggleClasses(isValidCC, $("#cc-group"));
             checkForCompleteAndValidForm();
         });
+
         $("#cc_expiration").blur(function() {
+            console.log('cc expiration blur');
             var exp = $("#cc_expiration").val();
             exp = $FORMATTING.formatExpirationDateInput(exp, '/');
             $("#cc_expiration").val(exp);
@@ -73,7 +85,9 @@
             toggleClasses(isValidExp, $("#exp-group"));
             checkForCompleteAndValidForm();
         });
+
         $("#cc_cvv").blur(function() {
+            console.log('cc cvv blur');
             var cvv = $("#cc_cvv").val();
             cvv = cvv.replace(/\D/g,'');
             $("#cc_cvv").val(cvv);
@@ -81,7 +95,9 @@
             toggleClasses(isValidCVV, $("#cvv-group"));
             checkForCompleteAndValidForm();
         });
+
         function toggleClasses(isValid, obj) {
+            console.log('toggleClasses');
             if (isValid) {
                 obj.addClass("has-success").removeClass("has-error");
                 obj.children(".help-block").text("Valid");
@@ -90,20 +106,24 @@
                 obj.children(".help-block").text("Invalid");
             }
         }
+
         function checkForCompleteAndValidForm() {
+            console.log('checkForCompleteAndValidForm');
             var isValidBilling = true;
             $.each($(".billing"), function(){ isValidBilling = isValidBilling && $(this).hasClass("has-success"); });
             // assuming most people fill out the form from top-to-bottom,
             // checking it from bottom-to-top takes advantage of short-circuiting
             if (isValidCVV && isValidExp && isValidCC && isValidBilling) {
                 $("#paymentButton").prop('disabled', false).addClass("not-disabled");
+                console.log('form is now valid.');
+            } else {
+                console.log('form is not yet valid.');
             }
         }
     });
 
-
-
     function createDonutCharts() {
+        console.log('createDonutCharts');
         $("<style type='text/css' id='dynamic' />").appendTo("head");
         $("div[chart-type*=donut]").each(function () {
             var d = $(this);
@@ -141,9 +161,10 @@
         });
     }
 
-    $(document).ready(function() {
-        createDonutCharts();
-    });
+$(document).ready(function() {
+    console.log('document ready');
+    createDonutCharts();
+});
 
 var Doorways = Doorways || {};
 
