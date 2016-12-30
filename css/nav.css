@@ -1,5 +1,32 @@
 #top-nav {
+    background:#4e4a47;
+    padding:10px 0;
+    position:relative;
+    text-align: right;
+    width:100%;
     min-height: 36px;
+}
+.search-icon, .nav-icon {
+  transition: all 0.2s ease 0s;
+  background:#d8d7d2;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 3px rgba(215, 214, 209, .4);
+  display:inline-block;
+  height:35px;
+  margin-right:25px;
+  width:35px;
+}
+.search-icon:hover, .nav-icon:hover {
+  transition: all 0.2s ease 0s;
+  box-shadow: 0px 0px 0px 3px rgba(215, 214, 209, 1);
+}
+.search-icon:before, .nav-icon:before {
+  color:#4e4a47;
+  content: "\f002";
+  font-family:FontAwesome;
+  left:-10px;
+  position:relative;
+  top:9px;
 }
 .nav-icon {
     transition: all 0.2s ease 0s;
@@ -14,9 +41,6 @@
 }
 .nav-item {
     display:inline-block;
-}
-.search-icon {
-    transition: all 0.2s ease 0s;
 }
 .nav-container {
     transition: all 0.2s ease 0s;
@@ -62,8 +86,8 @@
     margin: 10px 0;
 }
 .top-bar-container .menu li:after {
-    content: ' / ';
-    color: #ffffff;
+    content: '\00a0\00a0/\00a0';
+    color: #bebcb7;
 }
 .top-bar-container .menu li a {
     transition: all 0.2s ease 0s;
@@ -119,6 +143,9 @@
     flex: 1;
     position: relative;
 }
+.info-container div ul li:first-child {
+    margin-right: 6px;
+}
 .contact > ul {
     transition: all 0.2s ease 0s;
     position: absolute;
@@ -130,9 +157,6 @@
     display: inline-block;
     vertical-align: middle;
     color:#85837f;
-}
-.info-container div ul li:first-child {
-    margin-right: 6px;
 }
 .address > ul {
     transition: all 0.2s ease 0s;
@@ -175,8 +199,8 @@
 }
 .logo > img {
     display: block;
-    margin: 15px auto 0;
-    width: 60%;
+    margin: 18px auto 0;
+    width: 62%;
 }
 
 /* ----------- Our breakpoints - use in each .css file as needed ----------- */

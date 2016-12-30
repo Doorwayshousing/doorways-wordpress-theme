@@ -6,8 +6,8 @@
 <meta name="description" content="Doorways is the only organization in the Saint Louis area whose sole mission is to provide affordable, secure housing and related services for people living with HIV/AIDS. This mission is based on research that demonstrates that stable housing is the primary requisite for the most effective and compassionate treatment, management and prevention of HIV/AIDS.">
 <meta name="keywords" content="Housing, AIDS, HIV, awareness, donate, st. louis, saint louis, missouri">
 <meta property='og:image' content='http://doorwayshousing.org/fbpreview.png'/>
-<title>Doorways Housing - <?php wp_title(''); ?></title>
-<link rel="icon" type="image/svg+xml" href="<insert svg file link here>">
+<title>Doorways Housing <?php wp_title($sep = '&raquo;', $seplocation = '$right'); ?></title>
+<link rel="icon" type="image/svg+xml" href="<?php echo esc_url( get_template_directory_uri() ); ?>/img/favicon.ico">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -49,9 +49,11 @@
     </div>
     <div class="sub-header">
         <div class="logo-container">
-            <div class="logo">
-                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/doorwaysLogo.png" alt="" />
-            </div>
+            <a href="<?php echo home_url('/'); ?>">
+                <span class="logo">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/doorwaysLogo.png" alt="" />
+                </span>
+            </a>
         </div>
         <div class="info-container">
             <div class="contact">
@@ -69,7 +71,7 @@
                     </li>
                     <li>
                         <div>4385 Maryland Avenue</div>
-                        <div>Saint Lous, MO 63108</div>
+                        <div>Saint Louis, MO 63108</div>
                     </li>
                 </ul>
             </div>

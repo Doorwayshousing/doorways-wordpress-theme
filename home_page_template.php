@@ -37,10 +37,10 @@ Template Name: Doorways Home Page
                      </div>
                      <div class="radial" style="background: url(<?php the_post_thumbnail_url('medium');?>)no-repeat center center; background-size:cover;">
                          <a href="<?php the_permalink(); ?>">
-                             <div class="post-title">
-                                 <div><?php the_title(); ?></div>
-                                 <!-- <?php the_content(); ?> -->
-                             </div>
+                             <div class="title-container">
+                                 <div class="title-background"></div>
+                                 <div class="title-text"><?php the_title(); ?></div>
+                            </div>
                          </a>
                      </div>
                  </li>
