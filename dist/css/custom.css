@@ -344,19 +344,14 @@ select {
 }
 .huge-chartbox span.donut-filling {
   position: absolute;
-  display: block;
-  vertical-align: middle;
   font-family: "Open Sans";
-  font-weight: 300;
   color: #4a1223;
-  font-size: 39.1104px;
+  font-size: 40px;
   top: 50%;
-  margin-top: -20px;
-  width: 96px;
-  height: 40px;
-  text-align: center;
-  cursor: default;
-  overflow: none;
+  margin-left: 3px;
+  margin-top: -15px;
+  width: 100%;
+  display: block;
 }
 .huge-chartbox div.donut-caption-wrapper {
   width: 160px;
@@ -567,8 +562,9 @@ select {
 }
 .ne-title {
     align-self: center;
+    color: #4E4A47;
     padding: 5px;
-    font-family: 'Baskerville Regular', 'Roboto', 'Helvetica', sans-serif;
+    font-family: 'Libre Baskerville', 'Roboto', 'Helvetica', sans-serif;
     font-size:20px;
 }
 .ne-holder {
