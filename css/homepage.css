@@ -242,6 +242,9 @@
 .lm-donate-cont .lm-donate-body {
     white-space: nowrap;
 }
+.lm-donate-body {
+    font-size:0;
+}
 .lm-donate-body li {
     display:inline-block;
     height:200px;
@@ -289,6 +292,57 @@
     font-size:15px;
     margin:65px 0 0 0;
     width:96%;
+}
+.testimonials-cont {
+    background: #f2f2f2;
+    border-top:2px solid #e56e26;
+    position:relative;
+    text-align: center;
+}
+.testimonials-body{
+}
+.testimonials-body li {
+    background:#fff;
+    border:10px solid #00b5f0;
+    border-radius: 5px;
+    border-top:35px solid #00b5f0;
+    display:inline-block;
+    height:300px;
+    margin:20px;
+    position: relative;
+    width:300px;
+}
+.testimonials-body li a {
+    color:#555;
+    text-decoration: none;
+}
+.testimonials-body .title-text, .testimonials-body .content-text {
+    margin:10px;
+}
+.testimonials-body .title-text {
+    font-family: 'Yellowtail', cursive;
+    font-size:20px;
+    text-align: center;
+}
+.testimonials-body .content-text {
+    margin-top:25px;
+}
+.testimonial-icon {
+    background:#00b5f0;
+    border:2px solid #fff;
+    border-radius: 50%;
+    height:50px;
+    left:125px;
+    position:absolute;
+    top:-32px;
+    width:50px;
+}
+.testimonial-icon:before {
+    color:#fff;
+    content:"\f10e";
+    font-family: FontAwesome;
+    font-size:24px;
+    line-height:50px;
 }
 
 
