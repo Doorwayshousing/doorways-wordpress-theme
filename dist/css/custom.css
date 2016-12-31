@@ -422,17 +422,7 @@ select {
   border-radius: 0 80px 80px 0;
 }
 
-#sponsor-section {
-    background-color: #d9d7d2;
-    height: 125px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.sponsor {
-    color: #84827e;
-}
 
 #footer-bar {
     background-color: #4d4946;
@@ -535,8 +525,8 @@ select {
 .news-icon {
     align-self: center;
     background: #e76f21 none repeat scroll 0 0;
-    border: 1px solid #e76f21;
     border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px rgba(229, 110, 38, .3);
     color: #fff;
     height: 18px;
     margin-left: 20px;
@@ -551,8 +541,8 @@ select {
 .events-icon {
     align-self: center;
     background: #45b0f0 none repeat scroll 0 0;
-    border: 1px solid #45b0f0;
     border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px rgba(80, 178, 241, .3);
     color: #fff;
     height: 18px;
     margin-left: 5px;
@@ -569,7 +559,7 @@ select {
     align-self: center;
     padding: 5px;
     font-family: 'Baskerville', 'Roboto', 'Helvetica', sans-serif;
-    font-size:20px;
+    font-size:28px;
 }
 .ne-holder {
     text-align: center;
@@ -787,8 +777,9 @@ select {
     width:96%;
 }
 .testimonials-cont {
-    background: #f2f2f2;
+    background: #d8d7d2;
     border-top:2px solid #e56e26;
+    padding:50px 0;
     position:relative;
     text-align: center;
 }
@@ -803,14 +794,22 @@ select {
     height:300px;
     margin:20px;
     position: relative;
+    transition: all 0.2s ease 0s;
+    vertical-align: top;
     width:300px;
 }
-.testimonials-body li a {
+.testimonials-body li:hover {
+    border-color:#49a0d8;
+    transition: all 0.2s ease 0s;
+}
+.testimonials-body a {
     color:#555;
     text-decoration: none;
 }
 .testimonials-body .title-text, .testimonials-body .content-text {
     margin:10px;
+    max-height:209px;
+    overflow:hidden;
 }
 .testimonials-body .title-text {
     font-family: 'Yellowtail', cursive;
