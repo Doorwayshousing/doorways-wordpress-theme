@@ -13,6 +13,22 @@ Template Name: Doorways Home Page
          <i class="fa fa-angle-double-down bounce"></i>
      </div>
  </div>
+ <div class="lm-donate-cont">
+     <ul class="lm-donate-body">
+             <?php
+        $args = array( 'posts_per_page' => 2, 'category_name' => 'LearnMore,Donate' );
+        $myposts = get_posts( $args );
+        foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+             <li class="<?php $category = get_the_category(); $firstCategory = $category[0]->cat_name; echo $firstCategory; ?>" style="background: url(<?php the_post_thumbnail_url('medium');?>)no-repeat center center; background-size:cover;">
+                 <a href="<?php the_permalink(); ?>">
+                         <div class="title-text"><?php the_title(); ?></div>
+                         <div class="content-text"><?php the_content(); ?></div>
+                 </a>
+             </li>
+         <?php endforeach;
+     wp_reset_postdata();?>
+   </ul>
+ </div>
  <div class="ne-container">
      <div class="ne-header">
          <div class="news-icon">
