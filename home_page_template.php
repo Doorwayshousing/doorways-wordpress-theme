@@ -71,11 +71,13 @@ Template Name: Doorways Home Page
         $args = array( 'posts_per_page' => 3, 'category_name' => 'Testimonials' );
         $myposts = get_posts( $args );
         foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+        <a href="<?php the_permalink(); ?>">
              <li class="<?php $category = get_the_category(); $firstCategory = $category[0]->cat_name; echo $firstCategory; ?>">
                 <div class="testimonial-icon"></div>
                  <div class="content-text"><?php the_content(); ?></div>
                  <div class="title-text"><?php the_title(); ?></div>
              </li>
+        </a>
          <?php endforeach;
      wp_reset_postdata();?>
    </ul>
