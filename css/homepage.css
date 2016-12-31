@@ -75,7 +75,7 @@
 .ne-title {
     align-self: center;
     padding: 5px;
-    font-family: 'Baskerville Regular', 'Roboto', 'Helvetica', sans-serif;
+    font-family: 'Baskerville', 'Roboto', 'Helvetica', sans-serif;
     font-size:20px;
 }
 .ne-holder {
@@ -157,42 +157,12 @@
     background-color: #E76F21;
 }
 
-/* ----------- Our breakpoints - use in each .css file as needed ----------- */
-@media screen and (max-width: 1100px) {
 
-}
-@media screen and (max-width: 800px) {
-    .nav-is-open {
-        width: 100%;
-    }
-    .logo {
-        transition: all 0.2s ease 0s;
-        height: 100px;
-        width: 100px;
-        top:30px;
-    }
-    .logo > img {
-        transition: all 0.2s ease 0s;
-        margin: 10px auto 0;
-    }
-    .info-container {
-        transition: all 0.2s ease 0s;
-        flex-direction:column;
-    }
-    .contact > ul {
-        transition: all 0.2s ease 0s;
-        right:inherit;
-        top:35px;
-    }
-    .address > ul {
-        transition: all 0.2s ease 0s;
-        top: 10px;
-    }
-}
 
 .homepage-banner {
     background: url('../../img/homepage-banner.jpg') no-repeat center;
     background-size: cover;
+    border-bottom:2px solid #e56e26;
     height:350px;
     position: relative;
     width:100%;
@@ -268,4 +238,106 @@
     50% { top: -0.2em; }
     70% { top: -0.3em; }
     100% { top: 0; }
+}
+.lm-donate-cont .lm-donate-body {
+    white-space: nowrap;
+}
+.lm-donate-body li {
+    display:inline-block;
+    height:200px;
+    position:relative;
+    white-space: normal;
+    width:50%;
+}
+.lm-donate-body li a {
+    height:100%;
+    left:0;
+    position:absolute;;
+    text-decoration: none;
+    width:100%;
+}
+.LearnMore a {
+    background:rgba(229,110,38,.3);
+    transition: all 0.2s ease 0s;
+}
+.LearnMore a:hover {
+    background:rgba(229,110,38,.5);
+    transition: all 0.2s ease 0s;
+}
+.Donate a {
+    background:rgba(80,178,241,.3);
+    transition: all 0.2s ease 0s;
+}
+.Donate a:hover {
+    background:rgba(80,178,241,.5);
+    transition: all 0.2s ease 0s;
+}
+.LearnMore .title-text, .Donate .title-text {
+    border-right:1px solid #fff;
+    color:#fff;
+    float:left;
+    font-family: 'Baskerville', 'Roboto', 'Helvetica', sans-serif;
+    font-size:52px;
+    line-height:100px;
+    margin:50px 20px 0 0;
+    text-align: center;
+    width:23%;
+}
+.lm-donate-body .content-text {
+    color:#fff;
+    font-family:'Roboto', 'Helvetica', sans-serif;
+    font-size:15px;
+    margin:65px 0 0 0;
+    width:96%;
+}
+
+
+/* ----------- Our breakpoints - use in each .css file as needed ----------- */
+@media screen and (max-width: 1300px) {
+  .LearnMore .title-text, .Donate .title-text {
+      font-size:40px;
+  }
+}
+@media screen and (max-width: 1200px) {
+    .lm-donate-body .content-text {
+        margin:58px 0 0 0;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .LearnMore .title-text, .Donate .title-text {
+        border:none;
+        font-size:48px;
+        width:100%;
+    }
+    .lm-donate-body .content-text {
+        display:none;
+    }
+}
+@media screen and (max-width: 800px) {
+    .nav-is-open {
+        width: 100%;
+    }
+    .logo {
+        transition: all 0.2s ease 0s;
+        height: 100px;
+        width: 100px;
+        top:30px;
+    }
+    .logo > img {
+        transition: all 0.2s ease 0s;
+        margin: 10px auto 0;
+    }
+    .info-container {
+        transition: all 0.2s ease 0s;
+        flex-direction:column;
+    }
+    .contact > ul {
+        transition: all 0.2s ease 0s;
+        right:inherit;
+        top:35px;
+    }
+    .address > ul {
+        transition: all 0.2s ease 0s;
+        top: 10px;
+    }
 }
