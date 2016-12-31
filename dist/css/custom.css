@@ -38,6 +38,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	overflow-x:hidden;
 }
 ol, ul {
 	list-style: none;
@@ -526,6 +527,7 @@ select {
     color:#85837f;
 }
 .ne-header {
+    background:#f2f2f2;
     display: flex;
     height: 60px;
     width: 100%;
@@ -567,15 +569,14 @@ select {
     align-self: center;
     padding: 5px;
     font-family: 'Baskerville Regular', 'Roboto', 'Helvetica', sans-serif;
+    font-size:20px;
 }
 .ne-holder {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 .ne-holder > li {
-    margin-bottom: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+    display:inline-block;
+    margin:20px;
     position: relative;
 }
 .ne-holder > li .badge {
@@ -587,32 +588,36 @@ select {
     z-index: 9;
     height: 50px;
     width: 50px;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-radius: 50%;
     position: absolute;
-    right: 12px;
-    top: 12px;
+    right: -16px;
+    top: -16px;
     font-family: fontawesome;
     font-size: 1.5em;
     color: #ffffff;
     text-align: center;
 }
 .radial {
-    border-radius: 5%;
+    border-radius: 5px;
     height: 300px;
     width: 300px;
 }
 .radial > a {
     height: 100%;
+    left:0;
     position: absolute;
+    transition: all 0.2s ease 0s;
     width: 100%;
 }
+.radial > a:hover {
+    background:rgba(255,255,255,.3);
+    transition: all 0.2s ease 0s;
+}
 .radial .title-container {
-    display: table;
-    height: 30%;
     width: 100%;
     position: absolute;
-    top: 64%;
+    bottom: 20px;
 }
 .radial .title-background {
     position: absolute;
@@ -622,9 +627,7 @@ select {
 }
 .radial .title-text {
     color: #fff;
-    display: table-cell;
-    line-height: 1.1;
-    padding: 0 15%;
+    padding:10px;
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -649,12 +652,7 @@ select {
 
 /* ----------- Our breakpoints - use in each .css file as needed ----------- */
 @media screen and (max-width: 1100px) {
-    .ne-holder {
-        flex-direction:column;
-    }
-    .ne-holder > li {
-        margin: 0 auto 25px;
-    }
+
 }
 @media screen and (max-width: 800px) {
     .nav-is-open {
