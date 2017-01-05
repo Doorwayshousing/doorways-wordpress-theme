@@ -1,11 +1,12 @@
 <?php get_header(); ?>
 
-<div class="title-text"><?php the_title(); ?></div>
-<?php
-$myposts = get_posts( $args );
-foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-  <div class="content-text"><?php the_content(); ?></div>
-<?php endforeach;
-wp_reset_postdata();?>
+<div id="single-post-cont">
+    <div class="title-text <?php $category = get_the_category(); $firstCategory = $category[0]->cat_name; echo $firstCategory; ?>"><?php the_title(); ?></div>
+    <div class="content-text">
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php the_content(); ?>
+      <?php endwhile; endif; ?>
+    </div>
+</div>
 
- <?php get_footer(); ?>
+<?php get_footer(); ?>
