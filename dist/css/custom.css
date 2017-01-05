@@ -438,8 +438,6 @@ select {
   border-radius: 0 80px 80px 0;
 }
 
-
-
 #footer-bar {
     background-color: #4d4946;
     height: 75px;
@@ -449,19 +447,16 @@ select {
     padding-left: 35px;
     padding-right: 35px;
 }
-
 .copyright {
     color: #d8d6d1;
 }
-
 .social {
     align-items: center;
     color: #d8d6d1;
     display: flex;
     justify-content: center;
 }
-
-.facebook {
+.facebook, .twitter {
     background: #d8d6d1 none repeat scroll 0 0;
     border-radius: 50%;
     box-shadow: 0 0 0 3px rgba(133, 131, 127, 0.4);
@@ -469,31 +464,18 @@ select {
     height: 25px;
     position: relative;
     width: 25px;
-    margin-left: 15px;
+    margin-left: 10px;
 }
-
 .facebook i {
-    left: 7px;
+    left: 8px;
     position: absolute;
     top: 6px;
     color: #4d4946;
 }
-
-.twitter {
-    background: #d8d6d1 none repeat scroll 0 0;
-    border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(133, 131, 127, 0.4);
-    color: #4d4946;
-    height: 25px;
-    position: relative;
-    width: 25px;
-    margin-left: 15px;
-}
-
 .twitter i {
-    left: 7px;
+    left: 6px;
     position: absolute;
-    top: 6px;
+    top: 5px;
     color: #4d4946;
 }
 
