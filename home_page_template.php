@@ -66,6 +66,14 @@ Template Name: Doorways Home Page
      </div>
  </div>
  <div class="testimonials-cont">
+   <div class="testimonials-header">
+       <div class="quote-icon">
+           <i class="fa fa-quote-right"></i>
+       </div>
+       <div class="testimonials-title">
+           Testimonials
+       </div>
+   </div>
      <ul class="testimonials-body">
              <?php
         $args = array( 'posts_per_page' => 3, 'category_name' => 'Testimonials' );
