@@ -65,6 +65,20 @@ li {
   list-style: none;
 }
 
+/* Single Post CSS */
+#single-post-cont {
+}
+#single-post-cont .title-text {
+	background: linear-gradient(to right,#bfd71f 0%,#50b2f1 100%);
+	color:#fff;
+	font-family:'Baskerville', 'Roboto', 'Helvetica', sans-serif;
+	font-size:45px;
+	padding:70px 0 30px 30px;
+}
+#single-post-cont .content-text {
+	margin:20px;
+}
+
 #donationHeader {
     margin:0;
     padding: 30px;
