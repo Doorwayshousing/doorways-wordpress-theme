@@ -479,6 +479,11 @@ select {
     color: #4d4946;
 }
 
+#homepage-bg {
+  background: url('../../img/homepage-banner.jpg') no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+}
 .sub-header {
     background: #d7d8d2;
     height: 160px;
@@ -559,6 +564,9 @@ select {
     font-family: 'Baskerville', 'Roboto', 'Helvetica', sans-serif;
     font-size:28px;
 }
+.ne-body {
+    background:#fff;
+}
 .ne-holder {
     text-align: center;
 }
@@ -637,18 +645,13 @@ select {
 .News .radial .title-background {
     background-color: #E76F21;
 }
-
-
-
 .homepage-banner {
-    background: url('../../img/homepage-banner.jpg') no-repeat center;
-    background-size: cover;
     border-bottom:2px solid #e56e26;
-    height:350px;
+    height:450px;
     position: relative;
     width:100%;
 }
-.homepage-banner .cover {
+.homepage-banner .cover, .testimonials-body .cover {
     background: linear-gradient(to right,#bfd71f 0%,#50b2f1 100%);
     height: 100%;
     opacity: 0.5;
@@ -783,7 +786,6 @@ select {
 }
 .testimonials-body li {
     background:#fff;
-    border:10px solid #bfd52c;
     border-radius: 5px;
     border-top:35px solid #bfd52c;
     display:inline-block;
@@ -801,6 +803,7 @@ select {
 .testimonials-body a {
     color:#555;
     text-decoration: none;
+    position: relative;
 }
 .testimonials-body .title-text, .testimonials-body .content-text {
     margin:10px;
@@ -831,12 +834,6 @@ select {
     font-family: FontAwesome;
     font-size:24px;
     line-height:50px;
-}
-.testimonials-header {
-    background:#f2f2f2;
-    display: flex;
-    height: 60px;
-    width: 100%;
 }
 .quote-icon {
     align-self: center;
