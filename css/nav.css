@@ -53,7 +53,7 @@
     right: 0;
     text-align: center;
     transition: all 0.2s ease 0s;
-    z-index: 2;
+    z-index: 10;
 }
 .nav-is-open {
     transition: all 0.2s ease 0s;

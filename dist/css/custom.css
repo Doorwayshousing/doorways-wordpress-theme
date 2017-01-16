@@ -64,6 +64,22 @@ body {
 li {
   list-style: none;
 }
+h1 {
+	background: linear-gradient(to right,#bfd71f 0%,#50b2f1 100%);
+	color:#fff;
+	font-family:'Baskerville', 'Roboto', 'Helvetica', sans-serif;
+	font-size:45px;
+	padding:70px 0 30px 30px;
+}
+
+/* Single Post CSS */
+#single-post-cont {
+}
+#single-post-cont .title-text {
+}
+#single-post-cont .content-text, #page-content-cont .content-text {
+	margin:20px;
+}
 
 #donationHeader {
     margin:0;
@@ -416,8 +432,6 @@ select {
   border-radius: 0 80px 80px 0;
 }
 
-
-
 #footer-bar {
     background-color: #4d4946;
     height: 75px;
@@ -427,19 +441,16 @@ select {
     padding-left: 35px;
     padding-right: 35px;
 }
-
 .copyright {
     color: #d8d6d1;
 }
-
 .social {
     align-items: center;
     color: #d8d6d1;
     display: flex;
     justify-content: center;
 }
-
-.facebook {
+.facebook, .twitter {
     background: #d8d6d1 none repeat scroll 0 0;
     border-radius: 50%;
     box-shadow: 0 0 0 3px rgba(133, 131, 127, 0.4);
@@ -447,34 +458,26 @@ select {
     height: 25px;
     position: relative;
     width: 25px;
-    margin-left: 15px;
+    margin-left: 10px;
 }
-
 .facebook i {
-    left: 7px;
+    left: 8px;
     position: absolute;
     top: 6px;
     color: #4d4946;
 }
-
-.twitter {
-    background: #d8d6d1 none repeat scroll 0 0;
-    border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(133, 131, 127, 0.4);
-    color: #4d4946;
-    height: 25px;
-    position: relative;
-    width: 25px;
-    margin-left: 15px;
-}
-
 .twitter i {
-    left: 7px;
+    left: 6px;
     position: absolute;
-    top: 6px;
+    top: 5px;
     color: #4d4946;
 }
 
+#homepage-bg {
+  background: url('../../img/homepage-banner.jpg') no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+}
 .sub-header {
     background: #d7d8d2;
     height: 160px;
@@ -549,19 +552,22 @@ select {
     top: 5px;
     left:7px;
 }
-.ne-title {
+.ne-title, .testimonials-title {
     align-self: center;
     color: #4E4A47;
     padding: 5px;
     font-family: 'Libre Baskerville', 'Roboto', 'Helvetica', sans-serif;
     font-size:20px;
 }
+.ne-body {
+    background:#fff;
+}
 .ne-holder {
     text-align: center;
 }
 .ne-holder > li {
     display:inline-block;
-    margin:20px;
+    margin:50px 20px;
     position: relative;
 }
 .ne-holder > li .badge {
@@ -634,18 +640,13 @@ select {
 .News .radial .title-background {
     background-color: #E76F21;
 }
-
-
-
 .homepage-banner {
-    background: url('../../img/homepage-banner.jpg') no-repeat center;
-    background-size: cover;
     border-bottom:2px solid #e56e26;
-    height:350px;
+    height:450px;
     position: relative;
     width:100%;
 }
-.homepage-banner .cover {
+.homepage-banner .cover, .testimonials-body .cover {
     background: linear-gradient(to right,#bfd71f 0%,#50b2f1 100%);
     height: 100%;
     opacity: 0.5;
@@ -772,9 +773,7 @@ select {
     width:96%;
 }
 .testimonials-cont {
-    background: #d8d7d2;
     border-top:2px solid #e56e26;
-    padding:50px 0;
     position:relative;
     text-align: center;
 }
@@ -782,24 +781,24 @@ select {
 }
 .testimonials-body li {
     background:#fff;
-    border:10px solid #00b5f0;
     border-radius: 5px;
-    border-top:35px solid #00b5f0;
+    border-top:35px solid #bfd52c;
     display:inline-block;
     height:300px;
-    margin:20px;
+    margin:50px 20px;
     position: relative;
     transition: all 0.2s ease 0s;
     vertical-align: top;
     width:300px;
 }
 .testimonials-body li:hover {
-    border-color:#49a0d8;
+    border-color:#a7ba27;
     transition: all 0.2s ease 0s;
 }
 .testimonials-body a {
     color:#555;
     text-decoration: none;
+    position: relative;
 }
 .testimonials-body .title-text, .testimonials-body .content-text {
     margin:10px;
@@ -815,7 +814,7 @@ select {
     margin-top:25px;
 }
 .testimonial-icon {
-    background:#00b5f0;
+    background:#bfd52c;
     border:2px solid #fff;
     border-radius: 50%;
     height:50px;
@@ -830,6 +829,23 @@ select {
     font-family: FontAwesome;
     font-size:24px;
     line-height:50px;
+}
+.quote-icon {
+    align-self: center;
+    background: #bfd52c none repeat scroll 0 0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px rgba(192, 213, 45, .3);
+    color: #fff;
+    height: 18px;
+    margin-left: 20px;
+    padding: 5px;
+    width: 18px;
+    position: relative;
+}
+.quote-icon i {
+    left:7px;
+    position: absolute;
+    top:6px;
 }
 
 
@@ -938,7 +954,7 @@ select {
     right: 0;
     text-align: center;
     transition: all 0.2s ease 0s;
-    z-index: 2;
+    z-index: 10;
 }
 .nav-is-open {
     transition: all 0.2s ease 0s;
