@@ -330,7 +330,6 @@ select {
   }
 }
 
-
 .huge-chartbox {
   display: -ms-inline-flexbox;
   display: -webkit-inline-flexbox;
@@ -342,7 +341,7 @@ select {
   height: 160px;
   display: block;
   position: relative;
-  margin-right: 115px;
+  margin-right: 80px;
 }
 .huge-chartbox div[chart-type*="donut"]:last-of-type {
   margin-right: 0;
@@ -360,32 +359,27 @@ select {
 }
 .huge-chartbox span.donut-filling {
   position: absolute;
-  display: block;
-  vertical-align: middle;
   font-family: "Open Sans";
-  font-weight: 300;
   color: #4a1223;
-  font-size: 39.1104px;
+  font-size: 40px;
   top: 50%;
-  margin-top: -20px;
-  width: 96px;
-  height: 40px;
-  text-align: center;
-  cursor: default;
-  overflow: none;
+  margin-left: 3px;
+  margin-top: -15px;
+  width: 100%;
+  display: block;
 }
 .huge-chartbox div.donut-caption-wrapper {
   width: 160px;
   align-content: center;
   position: relative;
-  top: 195.55555556px;
+  top: 180px;
 }
 .huge-chartbox span.donut-caption {
   display: block;
   text-align: center;
   font-family: "baskerville";
   color: #4a1223;
-  font-size: 16px;
+  font-size: 20px;
   cursor: default;
   margin: 0 auto;
 }
@@ -438,6 +432,16 @@ select {
   border-radius: 0 80px 80px 0;
 }
 
+#sponsor-section {
+     background-color: #d9d7d2;
+     height: 125px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.sponsor {
+     color: #84827e;
+}
 #footer-bar {
     background-color: #4d4946;
     height: 75px;
@@ -560,6 +564,7 @@ select {
 }
 .ne-title, .testimonials-title {
     align-self: center;
+    color: #4E4A47;
     padding: 5px;
     font-family: 'Baskerville', 'Roboto', 'Helvetica', sans-serif;
     font-size:28px;

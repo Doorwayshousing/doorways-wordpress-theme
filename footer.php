@@ -1,4 +1,7 @@
 <? wp_footer();?>
+<div id="sponsor-section">
+    <div class="sponsor">sponsor 1</div>
+</div>
 <div id="footer-bar">
     <div class="copyright">&copy; 2017</div>
     <div class="social">FOLLOW OUR JOURNEY
@@ -14,7 +17,5 @@
         </a>
     </div>
 </div>
-
-
 </body>
 </html>
