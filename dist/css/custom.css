@@ -553,7 +553,7 @@ select {
     box-shadow: 0px 0px 0px 3px rgba(80, 178, 241, .3);
     color: #fff;
     height: 28px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 10px;
     padding: 5px;
     width: 28px;
@@ -562,8 +562,8 @@ select {
 .events-icon i {
     font-size: 1.4em;
     position: absolute;
-    top: 5px;
-    left:8px;
+    top: 7px;
+    left:9px;
 }
 .ne-title, .testimonials-title {
     align-self: center;
@@ -787,6 +787,8 @@ select {
     font-size:15px;
     margin:65px 0 0 0;
     width:96%;
+    display: flex;
+    align-items: center;
 }
 .testimonials-cont {
     border-top:2px solid #e56e26;
