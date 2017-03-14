@@ -33,7 +33,7 @@ Template Name: Donation Page
         </div>
         <div class="cover"></div>
     </div>
-    <div id="donation-breakdown">
+    <!-- <div id="donation-breakdown">
         <div class="breakdown-text">How will my donation help?</div>
         <div class="percentage-section">
             <div class="huge-chartbox">
@@ -43,7 +43,7 @@ Template Name: Donation Page
             </div>
         </div>
         <div class="breakdown-text-2">Your 100% tax-deductible gift contributes directly to the compassionate care of hundreds of adults and children living with HIV/AIDS.</div>
-    </div>
+    </div> -->
     <form class="form" id="myCustomForm">
         <div class="form-header">DONATE</div>
         <div class="form-group donation" id="donation-level">
@@ -62,7 +62,7 @@ Template Name: Donation Page
         <br/><br/><br/>
         <div id="payment-form">
             <div class="form-group donation" id="donation-amount">
-                <label class="control-label">Your Donation:</label>
+                <label class="control-label">Donation Amount:</label>
                 <input type="text" class="form-donation-control amount" id="donation-amount" value="" placeholder="">
                 <span class="help-block"></span>
                 <div class="form-group" id="donation-type">
@@ -70,7 +70,7 @@ Template Name: Donation Page
                     <input type="radio" name="Monthly" value="Monthly"> Monthly<br>
                 </div>
             </div>
-            <div class="donate-heading">Your Information
+            <div class="donate-heading"><div class="form-sub-header">Your Information</div>
                 <div class="donate-sub-heading">Name
                     <div class="donate-name-section">
                         <div class="form-group name" id="firstname-group">
@@ -89,12 +89,12 @@ Template Name: Donation Page
                             <span class="help-block"></span>
                         </div>
                         <div class="form-group" id="anonymous">
-                            <input type="radio" name="anonymous" value="anonymous" checked>Make donation anonymous</input>
+                            <input type="radio" name="anonymous" value="anonymous">Make donation anonymous</input>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="donate-heading">Your Payment Details
+            <div class="donate-heading"><div class="form-sub-header">Your Payment Details</div>
                 <div class="donate-sub-heading">Name on Card
                     <div class="donate-payment-section">
                         <div class="form-group billing" id="card-name">

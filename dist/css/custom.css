@@ -272,6 +272,36 @@ select {
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 800px){
+#myCustomForm{
+    width: 100%;
+    margin: 0;
+    background-color: #edecea;
+    text-align: center;
+    padding: 0;
+    border-radius: 0;
+}
+#payment-form {
+    margin: 0;
+}
+.donate-sub-heading {
+    margin: 0;
+    padding: 5px;
+}
+.form-sub-header {
+    text-align: center;
+    font-family: baskerville;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+.donate-name-section {
+    margin: 20px 0 0 0;
+}
+.donate-payment-section {
+    margin: 20px 0 0 0;
+}
+}
+
 .form-header {
     color: #85837f;
     font-family: baskerville;
