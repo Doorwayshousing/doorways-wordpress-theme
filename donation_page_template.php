@@ -45,7 +45,7 @@ Template Name: Donation Page
         <div class="breakdown-text-2">Your 100% tax-deductible gift contributes directly to the compassionate care of hundreds of adults and children living with HIV/AIDS.</div>
     </div> -->
     <form class="form" id="myCustomForm">
-        <div class="form-header">DONATE</div>
+        <!-- <div class="form-header">DONATE</div> -->
         <div class="form-group donation" id="donation-level">
             <select class="donation-dropdown" name="donation-level">
                 <option selected disabled>Choose Donation Level</option>
@@ -59,8 +59,8 @@ Template Name: Donation Page
         </div>
         <button class="paymentButton" id="payOnceButton">ONCE</button>
         <button class="paymentButton" id="payMonthlyButton">MONTHLY</button>
-        <br/><br/><br/>
-        <div id="payment-form">
+        
+        <!-- <div id="payment-form">
             <div class="form-group donation" id="donation-amount">
                 <label class="control-label">Donation Amount:</label>
                 <input type="text" class="form-donation-control amount" id="donation-amount" value="" placeholder="">
@@ -154,7 +154,7 @@ Template Name: Donation Page
                 </div>
             </div>
             <button class="btn btn-primary" id="paymentButton">Donate</button>
-        </div>
+        </div> -->
     </form>
     <br/>
     <h5>Results:</h5>

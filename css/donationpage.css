@@ -181,42 +181,12 @@ select {
     background-size: 150% 100%;
 }
 #myCustomForm{
-    width: 50%;
+    width: 600px;
     margin: 30px auto;
     background-color: #edecea;
     text-align: center;
     padding: 40px;
     border-radius: 10px;
-}
-
-@media only screen and (max-width: 800px){
-#myCustomForm{
-    width: 100%;
-    margin: 0;
-    background-color: #edecea;
-    text-align: center;
-    padding: 0;
-    border-radius: 0;
-}
-#payment-form {
-    margin: 0;
-}
-.donate-sub-heading {
-    margin: 0;
-    padding: 5px;
-}
-.form-sub-header {
-    text-align: center;
-    font-family: baskerville;
-    font-size: 25px;
-    padding-bottom: 5px;
-}
-.donate-name-section {
-    margin: 20px 0 0 0;
-}
-.donate-payment-section {
-    margin: 20px 0 0 0;
-}
 }
 
 .form-header {
@@ -244,6 +214,73 @@ select {
     background-color: #3c424f;
     border-color: #01db00;
 }
+
+@media only screen and (max-width: 800px){
+    #myCustomForm{
+        width: 100%;
+        margin: 0;
+        background-color: #edecea;
+        text-align: center;
+        padding: 25px 0 0 0;
+        border-radius: 0;
+    }
+    #payment-form {
+        margin: 0;
+    }
+    .donate-sub-heading {
+        margin: 0;
+        padding: 5px;
+    }
+    .form-header {
+        display: none;
+    }
+    .form-sub-header {
+        text-align: center;
+        font-family: baskerville;
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+    .donate-name-section {
+        margin: 20px 0 0 0;
+    }
+    .donate-payment-section {
+        margin: 20px 0 0 0;
+    }
+    #donationHeader {
+        min-height: 0;
+    }
+    .donate-header-text {
+        height: 30px;
+        font-size: 30px;
+    }
+    .donate-header-border {
+        display: none;
+    }
+    .donate-paragraph-text {
+        display: none;
+    }
+    .paymentButton {
+        margin: 5px;
+        width: 75% !important;
+        padding: 10px 32px !important;
+    }
+    .form-control {
+        height: 35px;
+        width: 99%;
+        border-radius: 5px;
+    }
+    select {
+        height: 40px;
+        width: 99%;
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
+
 @-webkit-keyframes progress{
     0% {
         background-position: 0 0;
