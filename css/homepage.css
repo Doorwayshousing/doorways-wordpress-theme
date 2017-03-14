@@ -57,9 +57,9 @@
     position: relative;
 }
 .news-icon i {
-    font-size: 1.5em;
+    font-size: 1.4em;
     position: absolute;
-    top:6px;
+    top:9px;
 }
 .events-icon {
     align-self: center;
@@ -69,15 +69,16 @@
     color: #fff;
     height: 28px;
     margin-left: 10px;
+    margin-right: 10px;
     padding: 5px;
     width: 28px;
     position: relative;
 }
 .events-icon i {
-    font-size: 1.5em;
+    font-size: 1.4em;
     position: absolute;
     top: 5px;
-    left:7px;
+    left:8px;
 }
 .ne-title, .testimonials-title {
     align-self: center;
