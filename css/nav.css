@@ -323,11 +323,13 @@
         transition: all 0.2s ease 0s;
         right:inherit;
         top:45px;
-        left:-20px;
+        margin-left:auto;
+        margin-right:auto;
     }
     .address > ul {
         transition: all 0.2s ease 0s;
-        top: 5px;
-        left: -20px;
+        top: 45px;
+        margin-left:auto;
+        margin-right:auto;
     }
 }

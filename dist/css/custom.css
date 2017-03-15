@@ -1242,8 +1242,7 @@ select {
     }
     .sub-header .info-container {
         transition: all 0.2s ease 0s;
-        flex-direction:column;
-        width: 50%;
+        width: 100%;
         top: 0;
         bottom: 0;
     }
@@ -1254,7 +1253,7 @@ select {
     }
     .sub-header .logo-container {
         transition: all 0.2s ease 0s;
-        width: 50%;
+        width: 0%;
     }
     .contact > ul {
         transition: all 0.2s ease 0s;
