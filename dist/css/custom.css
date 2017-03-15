@@ -1259,11 +1259,11 @@ select {
     }
     .contact > ul {
         transition: all 0.2s ease 0s;
-        position: relative;
+        position: static;
     }
     .address > ul {
         transition: all 0.2s ease 0s;
-        position: relative;
+        position: static;
     }
 }
 
