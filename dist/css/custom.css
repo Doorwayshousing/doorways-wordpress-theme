@@ -1044,7 +1044,7 @@ select {
 }
 .sub-header {
     background: #d7d8d2;
-    height: 160px;
+    height: 110px;
     position: relative;
 }
 .sub-header .logo-container {
@@ -1077,7 +1077,7 @@ select {
 .contact > ul {
     transition: all 0.2s ease 0s;
     position: absolute;
-    top: 60px;
+    top: 36px;
     right:0;
     margin-right:20px;
 }
@@ -1089,7 +1089,7 @@ select {
 .address > ul {
     transition: all 0.2s ease 0s;
     position: absolute;
-    top: 60px;
+    top: 36px;
     left: 20px;
 }
 .address ul li {
@@ -1135,6 +1135,65 @@ select {
 
 /* ----------- Our breakpoints - use in each .css file as needed ----------- */
 @media screen and (max-width: 800px) {
+    .nav-icon {
+        transition: all 0.2s ease 0s;
+        display: inherit;
+        position: absolute;
+        right: 20px;
+        top: 0;
+    }
+    .search-icon {
+        transition: all 0.2s ease 0s;
+        margin-right:75px;
+    }
+    .nav-is-open {
+        transition: all 0.2s ease 0s;
+        max-width: 700px;
+    }
+    .top-bar-container {
+        transition: all 0.2s ease 0s;
+        display: none;
+    }
+    .logo {
+        transition: all 0.2s ease 0s;
+        height: 100px;
+        width: 100px;
+        top:30px;
+    }
+    .logo > img {
+        transition: all 0.2s ease 0s;
+        margin: 10px auto 0;
+    }
+    /*.sub-header .info-container {
+        transition: all 0.2s ease 0s;
+        flex-direction:column;
+        width: 50%;
+        top: 0;
+        bottom: 0;
+    }
+    .sub-header .spacer-container {
+        transition: all 0.2s ease 0s;
+        position: absolute;
+        width: 0;
+    }
+    .sub-header .logo-container {
+        transition: all 0.2s ease 0s;
+        width: 50%;
+    }
+    .contact > ul {
+        transition: all 0.2s ease 0s;
+        right:inherit;
+        top:45px;
+        left:-20px;
+    }
+    .address > ul {
+        transition: all 0.2s ease 0s;
+        top: 5px;
+        left: -20px;
+    }*/
+}
+
+@media screen and (max-width: 600px) {
     .nav-icon {
         transition: all 0.2s ease 0s;
         display: inherit;
