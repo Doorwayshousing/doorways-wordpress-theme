@@ -58,7 +58,7 @@
 .nav-is-open {
     transition: all 0.2s ease 0s;
     max-width: 700px;
-    padding: 0;
+    padding: 10;
 }
 .nav-is-closed {
     transition: all 0.2s ease 0s;
@@ -79,7 +79,6 @@
 }
 .top-bar-container .menu {
     display: inherit;
-    margin-right:85px;
 }
 .top-bar-container .menu li {
     display: inline-block;
@@ -122,21 +121,27 @@
 }
 .sub-header {
     background: #d7d8d2;
-    height: 160px;
+    height: 110px;
     position: relative;
 }
-.sub-header > div {
+.sub-header .logo-container {
     position: absolute;
-    top: 0;
-    width: 50%;
-    bottom:0;
+    width: 25%;
+}
+.sub-header .spacer-container {
+    position: absolute;
+    width: 15%;
+}
+.sub-header .info-container {
+    position: absolute;
+    width: 60%;
 }
 .info-container {
     transition: all 0.2s ease 0s;
     right:0;
     display:flex;
     flex-direction: row;
-    font-size:14px;
+    font-size:16px;
 }
 .info-container > div {
     transition: all 0.2s ease 0s;
@@ -144,12 +149,12 @@
     position: relative;
 }
 .info-container div ul li:first-child {
-    margin-right: 6px;
+    margin-right: 10px;
 }
 .contact > ul {
     transition: all 0.2s ease 0s;
     position: absolute;
-    top: 60px;
+    top: 36px;
     right:0;
     margin-right:20px;
 }
@@ -161,7 +166,8 @@
 .address > ul {
     transition: all 0.2s ease 0s;
     position: absolute;
-    top: 60px;
+    top: 36px;
+    left: 20px;
 }
 .address ul li {
     display: inline-block;
@@ -171,40 +177,70 @@
 .address-icon {
     background: #85837f none repeat scroll 0 0;
     border-radius: 50%;
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
     box-shadow: 0px 0px 0px 3px rgba(133, 131, 127, .4);
     color: #ffffff!important;
     position: relative;
 }
 .address-icon i {
-    left: 7px;
+    left: 11px;
     position: absolute;
-    top: 6px;
+    top: 8px;
+    font-size: 26px;
 }
 .address .address-icon i {
-    left:9px;
+    left:13px;
 }
 .logo {
     transition: all 0.2s ease 0s;
     background: #ffffff;
-    height: 200px;
-    left: 16%;
+    height: 300px;
+    left: 25%;
     position: absolute;
-    top: 15px;
-    width: 200px;
+    top: 30px;
+    width: 300px;
     z-index:1;
     box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, .3);
     border-radius: 50%;
 }
 .logo > img {
     display: block;
-    margin: 18px auto 0;
+    margin: 28px auto 0;
     width: 62%;
 }
 
 /* ----------- Our breakpoints - use in each .css file as needed ----------- */
 @media screen and (max-width: 800px) {
+    .logo {
+        transition: all 0.2s ease 0s;
+        height: 200px;
+        width: 200px;
+        top:30px;
+    }
+    .logo > img {
+        transition: all 0.2s ease 0s;
+        margin: 18px auto 0;
+    }
+    .sub-header .info-container {
+        transition: all 0.2s ease 0s;
+        flex-direction:row;
+        width: 75%;
+        top: 0;
+        bottom: 0;
+    }
+    .sub-header .spacer-container {
+        transition: all 0.2s ease 0s;
+        position: absolute;
+        width: 0;
+    }
+    .sub-header .logo-container {
+        transition: all 0.2s ease 0s;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 700px) {
     .nav-icon {
         transition: all 0.2s ease 0s;
         display: inherit;
@@ -218,6 +254,7 @@
     }
     .nav-is-open {
         transition: all 0.2s ease 0s;
+        width: 100%;
         max-width: 700px;
     }
     .top-bar-container {
@@ -226,27 +263,35 @@
     }
     .logo {
         transition: all 0.2s ease 0s;
-        height: 100px;
-        width: 100px;
-        top:30px;
+        display: none;
     }
     .logo > img {
         transition: all 0.2s ease 0s;
-        margin: 10px auto 0;
+        display: none;
     }
-    .info-container {
+    .sub-header .info-container {
         transition: all 0.2s ease 0s;
-        flex-direction:column;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+    }
+    .sub-header .spacer-container {
+        display: none;
+    }
+    .sub-header .logo-container {
+        display: none;
+    }
+    .info-container>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .contact > ul {
         transition: all 0.2s ease 0s;
-        right:inherit;
-        top:45px;
-        left:-20px;
+        position: static;
     }
     .address > ul {
         transition: all 0.2s ease 0s;
-        top: 5px;
-        left: -20px;
+        position: static;
     }
 }

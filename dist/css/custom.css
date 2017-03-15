@@ -37,7 +37,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	/*line-height: 1;*/
 	overflow-x:hidden;
 }
 ol, ul {
@@ -465,63 +465,30 @@ select {
     border-radius: 50%;
     box-shadow: 0 0 0 3px rgba(133, 131, 127, 0.4);
     color: #4d4946;
-    height: 25px;
+    height: 35px;
     position: relative;
-    width: 25px;
-    margin-left: 10px;
+    width: 35px;
+    margin-left: 20px;
 }
 .facebook i {
-    left: 8px;
+    left: 10px;
     position: absolute;
-    top: 6px;
+    top: 7px;
     color: #4d4946;
+    font-size: 23px;
 }
 .twitter i {
-    left: 6px;
+    left: 8px;
     position: absolute;
-    top: 5px;
+    top: 7px;
     color: #4d4946;
+    font-size: 23px;
 }
 
 #homepage-bg {
   background: url('../../img/homepage-banner.jpg') no-repeat center;
   background-attachment: fixed;
   background-size: cover;
-}
-.sub-header {
-    background: #d7d8d2;
-    height: 160px;
-    position: relative;
-}
-.sub-header > div {
-    position: absolute;
-    top: 0;
-    width: 50%;
-    bottom:0;
-}
-.info-container {
-    transition: all 0.2s ease 0s;
-    right:0;
-    display:flex;
-    flex-direction: row;
-    font-size:14px;
-}
-.info-container > div {
-    transition: all 0.2s ease 0s;
-    flex: 1;
-    position: relative;
-}
-.contact > ul {
-    transition: all 0.2s ease 0s;
-    position: absolute;
-    top: 60px;
-    right:0;
-    margin-right:20px;
-}
-.contact ul li {
-    display: inline-block;
-    vertical-align: middle;
-    color:#85837f;
 }
 .ne-header {
     background:#f2f2f2;
@@ -535,15 +502,16 @@ select {
     border-radius: 50%;
     box-shadow: 0px 0px 0px 3px rgba(229, 110, 38, .3);
     color: #fff;
-    height: 18px;
+    height: 28px;
     margin-left: 20px;
     padding: 5px;
-    width: 18px;
+    width: 28px;
     position: relative;
 }
 .news-icon i {
+    font-size: 1.4em;
     position: absolute;
-    top:6px;
+    top:9px;
 }
 .events-icon {
     align-self: center;
@@ -551,16 +519,18 @@ select {
     border-radius: 50%;
     box-shadow: 0px 0px 0px 3px rgba(80, 178, 241, .3);
     color: #fff;
-    height: 18px;
-    margin-left: 5px;
+    height: 28px;
+    margin-left: 20px;
+    margin-right: 10px;
     padding: 5px;
-    width: 18px;
+    width: 28px;
     position: relative;
 }
 .events-icon i {
+    font-size: 1.4em;
     position: absolute;
-    top: 5px;
-    left:7px;
+    top: 7px;
+    left:9px;
 }
 .ne-title, .testimonials-title {
     align-self: center;
@@ -666,15 +636,13 @@ select {
 }
 .homepage-banner .tagline {
     background:rgba(255,255,255,0.7);
-    height: 200px;
+    height: 75%;
     position: absolute;
     right: 0;
-    top: 75px;
-    width: 300px;
+    top: 58px;
 }
 .tagline img {
-    margin:20px;
-    width:80%;
+    margin:60px 25px;
 }
 .scroll-down {
     bottom:0;
@@ -770,17 +738,23 @@ select {
     float:left;
     font-family: 'Baskerville', 'Roboto', 'Helvetica', sans-serif;
     font-size:52px;
-    line-height:100px;
-    margin:50px 20px 0 0;
+    height: 55%;
+    line-height: normal;
+    margin:45px 20px 0 0;
     text-align: center;
     width:23%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .lm-donate-body .content-text {
     color:#fff;
     font-family:'Roboto', 'Helvetica', sans-serif;
     font-size:15px;
-    margin:65px 0 0 0;
-    width:96%;
+    height: 100%;
+    width:70%;
+    display: flex;
+    align-items: center;
 }
 .testimonials-cont {
     border-top:2px solid #e56e26;
@@ -867,7 +841,7 @@ select {
 }
 @media screen and (max-width: 1200px) {
     .lm-donate-body .content-text {
-        margin:58px 0 0 0;
+        /*margin:58px 0 0 0;*/
     }
 }
 @media screen and (max-width: 1100px) {
@@ -881,31 +855,15 @@ select {
     }
 }
 @media screen and (max-width: 800px) {
-    .nav-is-open {
+
+}
+@media screen and (max-width: 700px) {
+    .homepage-banner .tagline {
         width: 100%;
     }
-    .logo {
-        transition: all 0.2s ease 0s;
-        height: 100px;
-        width: 100px;
-        top:30px;
-    }
-    .logo > img {
-        transition: all 0.2s ease 0s;
-        margin: 10px auto 0;
-    }
-    .info-container {
-        transition: all 0.2s ease 0s;
-        flex-direction:column;
-    }
-    .contact > ul {
-        transition: all 0.2s ease 0s;
-        right:inherit;
-        top:35px;
-    }
-    .address > ul {
-        transition: all 0.2s ease 0s;
-        top: 10px;
+    .tagline img {
+        margin:60px auto;
+        display: block;
     }
 }
 
@@ -969,7 +927,7 @@ select {
 .nav-is-open {
     transition: all 0.2s ease 0s;
     max-width: 700px;
-    padding: 0;
+    padding: 10;
 }
 .nav-is-closed {
     transition: all 0.2s ease 0s;
@@ -990,7 +948,6 @@ select {
 }
 .top-bar-container .menu {
     display: inherit;
-    margin-right:85px;
 }
 .top-bar-container .menu li {
     display: inline-block;
@@ -1033,21 +990,27 @@ select {
 }
 .sub-header {
     background: #d7d8d2;
-    height: 160px;
+    height: 110px;
     position: relative;
 }
-.sub-header > div {
+.sub-header .logo-container {
     position: absolute;
-    top: 0;
-    width: 50%;
-    bottom:0;
+    width: 25%;
+}
+.sub-header .spacer-container {
+    position: absolute;
+    width: 15%;
+}
+.sub-header .info-container {
+    position: absolute;
+    width: 60%;
 }
 .info-container {
     transition: all 0.2s ease 0s;
     right:0;
     display:flex;
     flex-direction: row;
-    font-size:14px;
+    font-size:16px;
 }
 .info-container > div {
     transition: all 0.2s ease 0s;
@@ -1055,12 +1018,12 @@ select {
     position: relative;
 }
 .info-container div ul li:first-child {
-    margin-right: 6px;
+    margin-right: 10px;
 }
 .contact > ul {
     transition: all 0.2s ease 0s;
     position: absolute;
-    top: 60px;
+    top: 36px;
     right:0;
     margin-right:20px;
 }
@@ -1072,7 +1035,8 @@ select {
 .address > ul {
     transition: all 0.2s ease 0s;
     position: absolute;
-    top: 60px;
+    top: 36px;
+    left: 20px;
 }
 .address ul li {
     display: inline-block;
@@ -1082,40 +1046,70 @@ select {
 .address-icon {
     background: #85837f none repeat scroll 0 0;
     border-radius: 50%;
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
     box-shadow: 0px 0px 0px 3px rgba(133, 131, 127, .4);
     color: #ffffff!important;
     position: relative;
 }
 .address-icon i {
-    left: 7px;
+    left: 11px;
     position: absolute;
-    top: 6px;
+    top: 8px;
+    font-size: 26px;
 }
 .address .address-icon i {
-    left:9px;
+    left:13px;
 }
 .logo {
     transition: all 0.2s ease 0s;
     background: #ffffff;
-    height: 200px;
-    left: 16%;
+    height: 300px;
+    left: 25%;
     position: absolute;
-    top: 15px;
-    width: 200px;
+    top: 30px;
+    width: 300px;
     z-index:1;
     box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, .3);
     border-radius: 50%;
 }
 .logo > img {
     display: block;
-    margin: 18px auto 0;
+    margin: 28px auto 0;
     width: 62%;
 }
 
 /* ----------- Our breakpoints - use in each .css file as needed ----------- */
 @media screen and (max-width: 800px) {
+    .logo {
+        transition: all 0.2s ease 0s;
+        height: 200px;
+        width: 200px;
+        top:30px;
+    }
+    .logo > img {
+        transition: all 0.2s ease 0s;
+        margin: 18px auto 0;
+    }
+    .sub-header .info-container {
+        transition: all 0.2s ease 0s;
+        flex-direction:row;
+        width: 75%;
+        top: 0;
+        bottom: 0;
+    }
+    .sub-header .spacer-container {
+        transition: all 0.2s ease 0s;
+        position: absolute;
+        width: 0;
+    }
+    .sub-header .logo-container {
+        transition: all 0.2s ease 0s;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 700px) {
     .nav-icon {
         transition: all 0.2s ease 0s;
         display: inherit;
@@ -1129,6 +1123,7 @@ select {
     }
     .nav-is-open {
         transition: all 0.2s ease 0s;
+        width: 100%;
         max-width: 700px;
     }
     .top-bar-container {
@@ -1137,28 +1132,36 @@ select {
     }
     .logo {
         transition: all 0.2s ease 0s;
-        height: 100px;
-        width: 100px;
-        top:30px;
+        display: none;
     }
     .logo > img {
         transition: all 0.2s ease 0s;
-        margin: 10px auto 0;
+        display: none;
     }
-    .info-container {
+    .sub-header .info-container {
         transition: all 0.2s ease 0s;
-        flex-direction:column;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+    }
+    .sub-header .spacer-container {
+        display: none;
+    }
+    .sub-header .logo-container {
+        display: none;
+    }
+    .info-container>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .contact > ul {
         transition: all 0.2s ease 0s;
-        right:inherit;
-        top:45px;
-        left:-20px;
+        position: static;
     }
     .address > ul {
         transition: all 0.2s ease 0s;
-        top: 5px;
-        left: -20px;
+        position: static;
     }
 }
 
