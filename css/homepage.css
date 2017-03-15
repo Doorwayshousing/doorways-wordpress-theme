@@ -434,11 +434,11 @@
 }
 @media screen and (max-width: 700px) {
     .homepage-banner .tagline {
-        background:rgba(255,255,255,0.7);
+        /*background:rgba(255,255,255,0.7);
         height: 75%;
         position: absolute;
         right: 0;
-        top: 58px;
+        top: 58px;*/
         width: 100%;
     }
     .tagline img {
