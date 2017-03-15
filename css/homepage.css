@@ -253,7 +253,7 @@
     font-size:0;
 }
 .lm-donate-body li {
-    display:inline-flex;
+    display:inline-block;
     height:200px;
     position:relative;
     white-space: normal;
@@ -300,9 +300,9 @@
     color:#fff;
     font-family:'Roboto', 'Helvetica', sans-serif;
     font-size:15px;
-    margin:65px 0 0 0;
+    /*margin:65px 0 0 0;*/
     height: 100%;
-    width:96%;
+    /*width:96%;*/
     display: flex;
     align-items: center;
 }

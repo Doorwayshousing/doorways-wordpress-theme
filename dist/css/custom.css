@@ -738,7 +738,7 @@ select {
     font-size:0;
 }
 .lm-donate-body li {
-    display:inline-block;
+    display:inline-flex;
     height:200px;
     position:relative;
     white-space: normal;
@@ -786,6 +786,7 @@ select {
     font-family:'Roboto', 'Helvetica', sans-serif;
     font-size:15px;
     margin:65px 0 0 0;
+    height: 100%;
     width:96%;
     display: flex;
     align-items: center;
