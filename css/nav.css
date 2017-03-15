@@ -142,7 +142,7 @@
     right:0;
     display:flex;
     flex-direction: row;
-    font-size:18px;
+    font-size:16px;
 }
 .info-container > div {
     transition: all 0.2s ease 0s;
@@ -197,7 +197,7 @@
     transition: all 0.2s ease 0s;
     background: #ffffff;
     height: 200px;
-    left: 16%;
+    left: 32%;
     position: absolute;
     top: 15px;
     width: 200px;
