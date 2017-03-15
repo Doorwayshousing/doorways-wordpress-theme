@@ -1135,7 +1135,7 @@ select {
 
 /* ----------- Our breakpoints - use in each .css file as needed ----------- */
 @media screen and (max-width: 800px) {
-    .nav-icon {
+    /*.nav-icon {
         transition: all 0.2s ease 0s;
         display: inherit;
         position: absolute;
@@ -1145,15 +1145,15 @@ select {
     .search-icon {
         transition: all 0.2s ease 0s;
         margin-right:75px;
-    }
+    }*/
     .nav-is-open {
         transition: all 0.2s ease 0s;
         max-width: 700px;
     }
-    .top-bar-container {
+    /*.top-bar-container {
         transition: all 0.2s ease 0s;
         display: none;
-    }
+    }*/
     .logo {
         transition: all 0.2s ease 0s;
         height: 100px;

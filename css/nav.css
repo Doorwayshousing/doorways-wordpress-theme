@@ -234,18 +234,18 @@
     }*/
     .logo {
         transition: all 0.2s ease 0s;
-        height: 100px;
-        width: 100px;
+        height: 200px;
+        width: 200px;
         top:30px;
     }
     .logo > img {
         transition: all 0.2s ease 0s;
         margin: 10px auto 0;
     }
-    /*.sub-header .info-container {
+    .sub-header .info-container {
         transition: all 0.2s ease 0s;
         flex-direction:column;
-        width: 50%;
+        width: 70%;
         top: 0;
         bottom: 0;
     }
@@ -256,9 +256,9 @@
     }
     .sub-header .logo-container {
         transition: all 0.2s ease 0s;
-        width: 50%;
+        width: 30%;
     }
-    .contact > ul {
+    /*.contact > ul {
         transition: all 0.2s ease 0s;
         right:inherit;
         top:45px;
