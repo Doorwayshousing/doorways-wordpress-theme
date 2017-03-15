@@ -144,7 +144,7 @@
     position: relative;
 }
 .info-container div ul li:first-child {
-    margin-right: 6px;
+    margin-right: 10px;
 }
 .contact > ul {
     transition: all 0.2s ease 0s;
@@ -162,6 +162,7 @@
     transition: all 0.2s ease 0s;
     position: absolute;
     top: 60px;
+    left: 20px;
 }
 .address ul li {
     display: inline-block;
@@ -178,13 +179,13 @@
     position: relative;
 }
 .address-icon i {
-    left: 10px;
+    left: 11px;
     position: absolute;
-    top: 6px;
+    top: 8px;
     font-size: 26px;
 }
 .address .address-icon i {
-    left:12px;
+    left:13px;
 }
 .logo {
     transition: all 0.2s ease 0s;

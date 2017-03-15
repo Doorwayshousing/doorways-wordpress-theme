@@ -408,7 +408,7 @@
     .nav-is-open {
         width: 100%;
     }
-    .logo {
+    /*.logo {
         transition: all 0.2s ease 0s;
         height: 100px;
         width: 100px;
@@ -417,8 +417,8 @@
     .logo > img {
         transition: all 0.2s ease 0s;
         margin: 10px auto 0;
-    }
-    .info-container {
+    }*/
+    /*.info-container {
         transition: all 0.2s ease 0s;
         flex-direction:column;
     }
@@ -430,5 +430,5 @@
     .address > ul {
         transition: all 0.2s ease 0s;
         top: 10px;
-    }
+    }*/
 }
