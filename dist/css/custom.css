@@ -895,7 +895,7 @@ select {
     .nav-is-open {
         width: 100%;
     }
-    .logo {
+    /*.logo {
         transition: all 0.2s ease 0s;
         height: 100px;
         width: 100px;
@@ -904,8 +904,8 @@ select {
     .logo > img {
         transition: all 0.2s ease 0s;
         margin: 10px auto 0;
-    }
-    .info-container {
+    }*/
+    /*.info-container {
         transition: all 0.2s ease 0s;
         flex-direction:column;
     }
@@ -917,7 +917,7 @@ select {
     .address > ul {
         transition: all 0.2s ease 0s;
         top: 10px;
-    }
+    }*/
 }
 
 #top-nav {
@@ -1066,7 +1066,7 @@ select {
     position: relative;
 }
 .info-container div ul li:first-child {
-    margin-right: 6px;
+    margin-right: 10px;
 }
 .contact > ul {
     transition: all 0.2s ease 0s;
@@ -1084,6 +1084,7 @@ select {
     transition: all 0.2s ease 0s;
     position: absolute;
     top: 60px;
+    left: 20px;
 }
 .address ul li {
     display: inline-block;
@@ -1100,13 +1101,13 @@ select {
     position: relative;
 }
 .address-icon i {
-    left: 10px;
+    left: 11px;
     position: absolute;
-    top: 6px;
+    top: 8px;
     font-size: 26px;
 }
 .address .address-icon i {
-    left:12px;
+    left:13px;
 }
 .logo {
     transition: all 0.2s ease 0s;
