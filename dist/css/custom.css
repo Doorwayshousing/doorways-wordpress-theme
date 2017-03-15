@@ -1166,7 +1166,7 @@ select {
     }
     .sub-header .info-container {
         transition: all 0.2s ease 0s;
-        flex-direction:column;
+        flex-direction:row;
         width: 70%;
         top: 0;
         bottom: 0;
