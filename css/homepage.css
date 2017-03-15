@@ -443,5 +443,6 @@
     }
     .tagline img {
         margin:60px auto;
+        display: block;
     }
 }
