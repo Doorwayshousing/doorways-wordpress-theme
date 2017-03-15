@@ -1167,7 +1167,7 @@ select {
     .sub-header .info-container {
         transition: all 0.2s ease 0s;
         flex-direction:row;
-        width: 70%;
+        width: 75%;
         top: 0;
         bottom: 0;
     }
@@ -1178,7 +1178,7 @@ select {
     }
     .sub-header .logo-container {
         transition: all 0.2s ease 0s;
-        width: 30%;
+        width: 25%;
     }
     /*.contact > ul {
         transition: all 0.2s ease 0s;
