@@ -1252,18 +1252,23 @@ select {
     .sub-header .logo-container {
         display: none;
     }
-    .contact > ul {
+    .info-container>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*.contact > ul {
         transition: all 0.2s ease 0s;
-        top:45px;
+        top:36px;
         margin-left:auto;
         margin-right:auto;
     }
     .address > ul {
         transition: all 0.2s ease 0s;
-        top: 45px;
+        top: 36px;
         margin-left:auto;
         margin-right:auto;
-    }
+    }*/
 }
 
 .search-container {

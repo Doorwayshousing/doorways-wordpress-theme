@@ -321,16 +321,12 @@
         align-items: center;
         justify-content: center;
     }
-    /*.contact > ul {
+    .contact > ul {
         transition: all 0.2s ease 0s;
-        top:36px;
-        margin-left:auto;
-        margin-right:auto;
+        position: relative;
     }
     .address > ul {
         transition: all 0.2s ease 0s;
-        top: 36px;
-        margin-left:auto;
-        margin-right:auto;
-    }*/
+        position: relative;
+    }
 }
