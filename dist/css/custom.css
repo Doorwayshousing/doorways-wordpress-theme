@@ -490,7 +490,7 @@ select {
   background-attachment: fixed;
   background-size: cover;
 }
-.sub-header {
+/*.sub-header {
     background: #d7d8d2;
     height: 160px;
     position: relative;
@@ -500,8 +500,8 @@ select {
     top: 0;
     width: 50%;
     bottom:0;
-}
-.info-container {
+}*/
+/*.info-container {
     transition: all 0.2s ease 0s;
     right:0;
     display:flex;
@@ -512,7 +512,7 @@ select {
     transition: all 0.2s ease 0s;
     flex: 1;
     position: relative;
-}
+}*/
 .contact > ul {
     transition: all 0.2s ease 0s;
     position: absolute;
@@ -671,15 +671,15 @@ select {
 }
 .homepage-banner .tagline {
     background:rgba(255,255,255,0.7);
-    height: 200px;
+    height: 75%;
     position: absolute;
     right: 0;
-    top: 75px;
-    width: 300px;
+    top: 58px;
+    /*width: 300px;*/
 }
 .tagline img {
-    margin:20px;
-    width:80%;
+    margin:60px 25px;
+    /*width:80%;*/
 }
 .scroll-down {
     bottom:0;

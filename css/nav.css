@@ -125,11 +125,13 @@
     height: 160px;
     position: relative;
 }
-.sub-header > div {
+.sub-header .logo-container {
     position: absolute;
-    top: 0;
     width: 50%;
-    bottom:0;
+}
+.sub-header .info-container {
+    position: absolute;
+    width: 50%;
 }
 .info-container {
     transition: all 0.2s ease 0s;
