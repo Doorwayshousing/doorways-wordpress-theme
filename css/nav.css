@@ -58,7 +58,7 @@
 .nav-is-open {
     transition: all 0.2s ease 0s;
     max-width: 700px;
-    padding: 0;
+    padding: 10;
 }
 .nav-is-closed {
     transition: all 0.2s ease 0s;
@@ -224,10 +224,10 @@
         transition: all 0.2s ease 0s;
         margin-right:75px;
     }*/
-    .nav-is-open {
+    /*.nav-is-open {
         transition: all 0.2s ease 0s;
         max-width: 700px;
-    }
+    }*/
     /*.top-bar-container {
         transition: all 0.2s ease 0s;
         display: none;
@@ -240,7 +240,7 @@
     }
     .logo > img {
         transition: all 0.2s ease 0s;
-        margin: 10px auto 0;
+        margin: 18px auto 0;
     }
     .sub-header .info-container {
         transition: all 0.2s ease 0s;

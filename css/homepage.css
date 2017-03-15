@@ -26,7 +26,7 @@
     flex: 1;
     position: relative;
 }*/
-.contact > ul {
+/*.contact > ul {
     transition: all 0.2s ease 0s;
     position: absolute;
     top: 60px;
@@ -37,7 +37,7 @@
     display: inline-block;
     vertical-align: middle;
     color:#85837f;
-}
+}*/
 .ne-header {
     background:#f2f2f2;
     display: flex;
@@ -405,9 +405,9 @@
     }
 }
 @media screen and (max-width: 800px) {
-    .nav-is-open {
+    /*.nav-is-open {
         width: 100%;
-    }
+    }*/
     /*.logo {
         transition: all 0.2s ease 0s;
         height: 100px;
@@ -431,4 +431,17 @@
         transition: all 0.2s ease 0s;
         top: 10px;
     }*/
+}
+@media screen and (max-width: 400px) {
+    .homepage-banner .tagline {
+        background:rgba(255,255,255,0.7);
+        height: 75%;
+        position: absolute;
+        right: 0;
+        top: 58px;
+        width: 100%;
+    }
+    .tagline img {
+        margin:auto 25px;
+    }
 }
