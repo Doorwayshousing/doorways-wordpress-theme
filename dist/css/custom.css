@@ -27,7 +27,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	/*line-height: 120%;*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -466,22 +465,24 @@ select {
     border-radius: 50%;
     box-shadow: 0 0 0 3px rgba(133, 131, 127, 0.4);
     color: #4d4946;
-    height: 25px;
+    height: 35px;
     position: relative;
-    width: 25px;
+    width: 35px;
     margin-left: 10px;
 }
 .facebook i {
-    left: 8px;
+    left: 10px;
     position: absolute;
-    top: 6px;
+    top: 7px;
     color: #4d4946;
+    font-size: 23px;
 }
 .twitter i {
     left: 6px;
     position: absolute;
     top: 5px;
     color: #4d4946;
+    font-size: 23px;
 }
 
 #homepage-bg {
@@ -787,9 +788,8 @@ select {
     color:#fff;
     font-family:'Roboto', 'Helvetica', sans-serif;
     font-size:15px;
-    /*margin:65px 0 0 0;*/
     height: 100%;
-    /*width:96%;*/
+    width:70%;
     display: flex;
     align-items: center;
 }
@@ -878,7 +878,7 @@ select {
 }
 @media screen and (max-width: 1200px) {
     .lm-donate-body .content-text {
-        margin:58px 0 0 0;
+        /*margin:58px 0 0 0;*/
     }
 }
 @media screen and (max-width: 1100px) {

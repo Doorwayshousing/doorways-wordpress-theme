@@ -34,7 +34,7 @@
     height: 35px;
     position: relative;
     width: 35px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .facebook i {
     left: 10px;
@@ -44,9 +44,9 @@
     font-size: 23px;
 }
 .twitter i {
-    left: 6px;
+    left: 8px;
     position: absolute;
-    top: 5px;
+    top: 7px;
     color: #4d4946;
     font-size: 23px;
 }

@@ -79,7 +79,7 @@
 }
 .top-bar-container .menu {
     display: inherit;
-    margin-right:85px;
+    /*margin-right:85px;*/
 }
 .top-bar-container .menu li {
     display: inline-block;
@@ -171,19 +171,20 @@
 .address-icon {
     background: #85837f none repeat scroll 0 0;
     border-radius: 50%;
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
     box-shadow: 0px 0px 0px 3px rgba(133, 131, 127, .4);
     color: #ffffff!important;
     position: relative;
 }
 .address-icon i {
-    left: 7px;
+    left: 10px;
     position: absolute;
     top: 6px;
+    font-size: 26px;
 }
 .address .address-icon i {
-    left:9px;
+    left:12px;
 }
 .logo {
     transition: all 0.2s ease 0s;
