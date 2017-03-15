@@ -131,11 +131,11 @@
 }
 .sub-header .spacer-container {
     position: absolute;
-    width: 25%;
+    width: 15%;
 }
 .sub-header .info-container {
     position: absolute;
-    width: 50%;
+    width: 60%;
 }
 .info-container {
     transition: all 0.2s ease 0s;
@@ -245,6 +245,7 @@
     .sub-header .info-container {
         transition: all 0.2s ease 0s;
         flex-direction:column;
+        width: 50%;
     }
     .sub-header .spacer-container {
         transition: all 0.2s ease 0s;
