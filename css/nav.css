@@ -127,7 +127,11 @@
 }
 .sub-header .logo-container {
     position: absolute;
-    width: 50%;
+    width: 25%;
+}
+.sub-header .spacer-container {
+    position: absolute;
+    width: 25%;
 }
 .sub-header .info-container {
     position: absolute;
@@ -138,7 +142,7 @@
     right:0;
     display:flex;
     flex-direction: row;
-    font-size:14px;
+    font-size:18px;
 }
 .info-container > div {
     transition: all 0.2s ease 0s;
@@ -239,12 +243,17 @@
         margin: 10px auto 0;
     }
     .sub-header .info-container {
-        width: 75%;
         transition: all 0.2s ease 0s;
         flex-direction:column;
     }
+    .sub-header .spacer-container {
+        transition: all 0.2s ease 0s;
+        position: absolute;
+        width: 0;
+    }
     .sub-header .logo-container {
-        width: 25%;
+        transition: all 0.2s ease 0s;
+        width: 50%;
     }
     .contact > ul {
         transition: all 0.2s ease 0s;

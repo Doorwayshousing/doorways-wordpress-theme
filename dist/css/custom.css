@@ -1160,12 +1160,12 @@ select {
         transition: all 0.2s ease 0s;
         margin: 10px auto 0;
     }
-    .info-container {
+    .sub-header .info-container {
         width: 75%;
         transition: all 0.2s ease 0s;
         flex-direction:column;
     }
-    .logo-container {
+    .sub-header .logo-container {
         width: 25%;
     }
     .contact > ul {

@@ -56,6 +56,9 @@
                 </span>
             </a>
         </div>
+        <div class="spacer-container">
+            &nbsp;
+        </div>
         <div class="info-container">
             <div class="contact">
                 <ul>
