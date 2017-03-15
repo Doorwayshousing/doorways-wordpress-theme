@@ -1163,6 +1163,10 @@ select {
     .info-container {
         transition: all 0.2s ease 0s;
         flex-direction:column;
+        width: 75%;
+    }
+    .logo-container {
+        width: 25%;
     }
     .contact > ul {
         transition: all 0.2s ease 0s;

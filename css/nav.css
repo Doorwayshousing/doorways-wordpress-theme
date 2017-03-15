@@ -239,9 +239,9 @@
         margin: 10px auto 0;
     }
     .info-container {
+        width: 75%;
         transition: all 0.2s ease 0s;
         flex-direction:column;
-        width: 75%;
     }
     .logo-container {
         width: 25%;
