@@ -3,41 +3,6 @@
   background-attachment: fixed;
   background-size: cover;
 }
-/*.sub-header {
-    background: #d7d8d2;
-    height: 160px;
-    position: relative;
-}
-.sub-header > div {
-    position: absolute;
-    top: 0;
-    width: 50%;
-    bottom:0;
-}*/
-/*.info-container {
-    transition: all 0.2s ease 0s;
-    right:0;
-    display:flex;
-    flex-direction: row;
-    font-size:14px;
-}
-.info-container > div {
-    transition: all 0.2s ease 0s;
-    flex: 1;
-    position: relative;
-}*/
-/*.contact > ul {
-    transition: all 0.2s ease 0s;
-    position: absolute;
-    top: 60px;
-    right:0;
-    margin-right:20px;
-}
-.contact ul li {
-    display: inline-block;
-    vertical-align: middle;
-    color:#85837f;
-}*/
 .ne-header {
     background:#f2f2f2;
     display: flex;
@@ -188,11 +153,9 @@
     position: absolute;
     right: 0;
     top: 58px;
-    /*width: 300px;*/
 }
 .tagline img {
     margin:60px 25px;
-    /*width:80%;*/
 }
 .scroll-down {
     bottom:0;
@@ -405,40 +368,10 @@
     }
 }
 @media screen and (max-width: 800px) {
-    /*.nav-is-open {
-        width: 100%;
-    }*/
-    /*.logo {
-        transition: all 0.2s ease 0s;
-        height: 100px;
-        width: 100px;
-        top:30px;
-    }
-    .logo > img {
-        transition: all 0.2s ease 0s;
-        margin: 10px auto 0;
-    }*/
-    /*.info-container {
-        transition: all 0.2s ease 0s;
-        flex-direction:column;
-    }
-    .contact > ul {
-        transition: all 0.2s ease 0s;
-        right:inherit;
-        top:35px;
-    }
-    .address > ul {
-        transition: all 0.2s ease 0s;
-        top: 10px;
-    }*/
+
 }
 @media screen and (max-width: 700px) {
     .homepage-banner .tagline {
-        /*background:rgba(255,255,255,0.7);
-        height: 75%;
-        position: absolute;
-        right: 0;
-        top: 58px;*/
         width: 100%;
     }
     .tagline img {
