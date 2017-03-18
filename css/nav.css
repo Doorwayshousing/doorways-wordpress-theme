@@ -148,6 +148,9 @@
     flex: 1;
     position: relative;
 }
+.info-container div ul:first-child {
+    margin-right: 20px;
+}
 .info-container div ul li:first-child {
     margin-right: 10px;
 }
@@ -159,7 +162,7 @@
     margin-right:20px;
 }
 .contact ul li {
-    display: inline-block;
+    display: inline-flex;
     vertical-align: middle;
     color:#85837f;
 }
@@ -170,7 +173,7 @@
     left: 20px;
 }
 .address ul li {
-    display: inline-block;
+    display: inline-flex;
     vertical-align: top;
     color:#85837f;
 }
