@@ -25,7 +25,7 @@
   font-family:FontAwesome;
   left:-10px;
   position:relative;
-  top:9px;
+  top:6px;
 }
 .nav-icon {
     display: none;
@@ -62,6 +62,7 @@
 }
 .top-bar-container {
     display: inline-block;
+    height: 39px;
     text-align: center;
     width: 100%;
 }
