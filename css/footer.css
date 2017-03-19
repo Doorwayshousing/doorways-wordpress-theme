@@ -12,10 +12,9 @@
     background-color: #4d4946;
     height: 75px;
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding: 0 35px;
 }
 .copyright {
     color: #d8d6d1;
@@ -26,6 +25,10 @@
     display: flex;
     justify-content: center;
 }
+.social a {
+    margin-left: 20px;
+    text-decoration:none;
+}
 .facebook, .twitter {
     background: #d8d6d1 none repeat scroll 0 0;
     border-radius: 50%;
@@ -34,19 +37,17 @@
     height: 35px;
     position: relative;
     width: 35px;
-    margin-left: 20px;
+    display: flex;
 }
-.facebook i {
-    left: 10px;
-    position: absolute;
-    top: 7px;
+.facebook i, .twitter i {
+    margin:auto;
     color: #4d4946;
     font-size: 23px;
 }
-.twitter i {
-    left: 8px;
-    position: absolute;
-    top: 7px;
-    color: #4d4946;
-    font-size: 23px;
+
+@media screen and (max-width: 500px) {
+    #footer-bar {
+        font-size: 12px;
+        padding: 0 25px;
+    }
 }

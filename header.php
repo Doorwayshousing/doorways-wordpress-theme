@@ -49,20 +49,15 @@
         </div>
     </div>
     <div class="sub-header">
-        <div class="logo-container">
-            <a href="<?php echo home_url('/'); ?>">
-                <span class="logo">
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/doorwaysLogo.png" alt="" />
-                </span>
-            </a>
-        </div>
-        <div class="spacer-container">
-            &nbsp;
-        </div>
+        <a href="<?php echo home_url('/'); ?>">
+            <span class="logo">
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/doorwaysLogo.png" alt="" />
+            </span>
+        </a>
         <div class="info-container">
             <div class="contact">
                 <ul>
-                    <li class="address-icon">
+                    <li class="icon-container">
                         <i class="fa fa-phone"></i>
                     </li>
                     <li>(314) 535-1919</li>
@@ -70,7 +65,7 @@
             </div>
             <div class="address">
                 <ul>
-                    <li class="address-icon">
+                    <li class="icon-container">
                         <i class="fa fa-map-marker"></i>
                     </li>
                     <li>

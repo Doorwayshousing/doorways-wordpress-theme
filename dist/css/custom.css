@@ -446,10 +446,9 @@ select {
     background-color: #4d4946;
     height: 75px;
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding: 0 35px;
 }
 .copyright {
     color: #d8d6d1;
@@ -460,6 +459,10 @@ select {
     display: flex;
     justify-content: center;
 }
+.social a {
+    margin-left: 20px;
+    text-decoration:none;
+}
 .facebook, .twitter {
     background: #d8d6d1 none repeat scroll 0 0;
     border-radius: 50%;
@@ -468,21 +471,19 @@ select {
     height: 35px;
     position: relative;
     width: 35px;
-    margin-left: 20px;
+    display: flex;
 }
-.facebook i {
-    left: 10px;
-    position: absolute;
-    top: 7px;
+.facebook i, .twitter i {
+    margin:auto;
     color: #4d4946;
     font-size: 23px;
 }
-.twitter i {
-    left: 8px;
-    position: absolute;
-    top: 7px;
-    color: #4d4946;
-    font-size: 23px;
+
+@media screen and (max-width: 500px) {
+    #footer-bar {
+        font-size: 12px;
+        padding: 0 25px;
+    }
 }
 
 #homepage-bg {
@@ -541,13 +542,17 @@ select {
 }
 .ne-body {
     background:#fff;
+    padding: 15px 10px 20px;
 }
 .ne-holder {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .ne-holder > li {
     display:inline-block;
-    margin:50px 20px;
+    margin:25px 20px;
     position: relative;
 }
 .ne-holder > li .badge {
@@ -578,12 +583,12 @@ select {
     height: 100%;
     left:0;
     position: absolute;
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s;
     width: 100%;
 }
 .radial > a:hover {
     background:rgba(255,255,255,.3);
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s;
 }
 .radial .title-container {
     width: 100%;
@@ -621,6 +626,7 @@ select {
     background-color: #E76F21;
 }
 .homepage-banner {
+    transition: all 0.2s;
     border-bottom:2px solid #e56e26;
     height:450px;
     position: relative;
@@ -635,13 +641,15 @@ select {
     width: 100%;
 }
 .homepage-banner .tagline {
-    background:rgba(255,255,255,0.7);
+    transition: all 0.2s;
+    background:rgba(255,255,255,0.85);
     height: 75%;
     position: absolute;
     right: 0;
     top: 58px;
 }
 .tagline img {
+    transition: all 0.2s;
     margin:60px 25px;
 }
 .scroll-down {
@@ -718,19 +726,19 @@ select {
 }
 .LearnMore a {
     background:rgba(229,110,38,.3);
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s;
 }
 .LearnMore a:hover {
     background:rgba(229,110,38,.5);
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s;
 }
 .Donate a {
     background:rgba(80,178,241,.3);
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s;
 }
 .Donate a:hover {
     background:rgba(80,178,241,.5);
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s;
 }
 .LearnMore .title-text, .Donate .title-text {
     border-right:1px solid #fff;
@@ -759,48 +767,51 @@ select {
 .testimonials-cont {
     border-top:2px solid #e56e26;
     position:relative;
-    text-align: center;
 }
 .testimonials-body{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    padding: 20px 10px;
 }
 .testimonials-body li {
     background:#fff;
     border-radius: 5px;
     border-top:35px solid #bfd52c;
-    display:inline-block;
+    display:flex;
+    flex-direction:column;
     height:300px;
-    margin:50px 20px;
+    margin:20px 20px;
     position: relative;
-    transition: all 0.2s ease 0s;
-    vertical-align: top;
+    transition: all 0.2s;
     width:300px;
 }
 .testimonials-body li:hover {
     border-color:#a7ba27;
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s;
 }
 .testimonials-body a {
     color:#555;
     text-decoration: none;
     position: relative;
 }
-.testimonials-body .title-text, .testimonials-body .content-text {
-    margin:10px;
-    max-height:209px;
-    overflow:hidden;
-}
-.testimonials-body .title-text {
+.testimonials-body .signature-text {
     font-family: 'Yellowtail', cursive;
     font-size:20px;
-    text-align: center;
+    margin: 0 25px;
+    text-align: right;
 }
 .testimonials-body .content-text {
-    margin-top:25px;
+    margin:25px 15px 15px 20px;
+    text-align: left;
+    max-height:209px;
+    overflow:hidden;
 }
 .testimonial-icon {
     background:#bfd52c;
     border:2px solid #fff;
     border-radius: 50%;
+    display:flex;
     height:50px;
     left:125px;
     position:absolute;
@@ -813,25 +824,8 @@ select {
     font-family: FontAwesome;
     font-size:24px;
     line-height:50px;
+    margin:auto;
 }
-.quote-icon {
-    align-self: center;
-    background: #bfd52c none repeat scroll 0 0;
-    border-radius: 50%;
-    box-shadow: 0px 0px 0px 3px rgba(192, 213, 45, .3);
-    color: #fff;
-    height: 18px;
-    margin-left: 20px;
-    padding: 5px;
-    width: 18px;
-    position: relative;
-}
-.quote-icon i {
-    left:7px;
-    position: absolute;
-    top:6px;
-}
-
 
 /* ----------- Our breakpoints - use in each .css file as needed ----------- */
 @media screen and (max-width: 1300px) {
@@ -876,7 +870,7 @@ select {
     min-height: 36px;
 }
 .search-icon, .nav-icon {
-  transition: all 0.2s ease 0s;
+  transition: all 0.2s;
   background:#d8d7d2;
   border-radius: 50%;
   box-shadow: 0px 0px 0px 3px rgba(215, 214, 209, .4);
@@ -886,7 +880,6 @@ select {
   width:35px;
 }
 .search-icon:hover, .nav-icon:hover {
-  transition: all 0.2s ease 0s;
   box-shadow: 0px 0px 0px 3px rgba(215, 214, 209, 1);
 }
 .search-icon:before, .nav-icon:before {
@@ -898,7 +891,6 @@ select {
   top:9px;
 }
 .nav-icon {
-    transition: all 0.2s ease 0s;
     display: none;
     margin-right:0;
 }
@@ -912,7 +904,7 @@ select {
     display:inline-block;
 }
 .nav-container {
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s;
     background: rgba(78,74,71,.9);
     color: white;
     height: 100%;
@@ -921,17 +913,7 @@ select {
     position: absolute;
     right: 0;
     text-align: center;
-    transition: all 0.2s ease 0s;
     z-index: 10;
-}
-.nav-is-open {
-    transition: all 0.2s ease 0s;
-    max-width: 700px;
-    padding: 10;
-}
-.nav-is-closed {
-    transition: all 0.2s ease 0s;
-    display: none;
 }
 .side-menu {
     display: none;
@@ -958,13 +940,11 @@ select {
     color: #bebcb7;
 }
 .top-bar-container .menu li a {
-    transition: all 0.2s ease 0s;
     text-decoration: none;
     color:#bebcb7;
     text-transform: uppercase;
 }
 .top-bar-container .menu li a:hover {
-    transition: all 0.2s ease 0s;
     color:#fff;
     cursor: pointer;
 }
@@ -975,13 +955,11 @@ select {
     margin-top:15px;
 }
 .side-nav .menu li a {
-    transition: all 0.2s ease 0s;
     text-decoration: none;
     color:#bebcb7;
     text-transform: uppercase;
 }
 .side-nav .menu li a:hover {
-    transition: all 0.2s ease 0s;
     color:#fff;
     cursor: pointer;
 }
@@ -990,82 +968,53 @@ select {
 }
 .sub-header {
     background: #d7d8d2;
+    display: flex;
     height: 110px;
     position: relative;
 }
-.sub-header .logo-container {
-    position: absolute;
-    width: 25%;
-}
-.sub-header .spacer-container {
-    position: absolute;
-    width: 15%;
-}
-.sub-header .info-container {
-    position: absolute;
-    width: 60%;
-}
 .info-container {
-    transition: all 0.2s ease 0s;
-    right:0;
-    display:flex;
+    transition: all 0.2s;
+    justify-content:center;
+    position: absolute;
+    right: 10%;
+    display: flex;
     flex-direction: row;
-    font-size:16px;
+    font-size: 16px;
+    height: 100%;
 }
 .info-container > div {
-    transition: all 0.2s ease 0s;
-    flex: 1;
+    transition: all 0.2s;
+    display: flex;
     position: relative;
 }
-.info-container div ul li:first-child {
-    margin-right: 10px;
+.info-container div ul {
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
 }
-.contact > ul {
-    transition: all 0.2s ease 0s;
-    position: absolute;
-    top: 36px;
-    right:0;
-    margin-right:20px;
-}
-.contact ul li {
-    display: inline-block;
-    vertical-align: middle;
+.info-container div ul li {
     color:#85837f;
+    margin: auto 10px;
 }
-.address > ul {
-    transition: all 0.2s ease 0s;
-    position: absolute;
-    top: 36px;
-    left: 20px;
-}
-.address ul li {
-    display: inline-block;
-    vertical-align: top;
-    color:#85837f;
-}
-.address-icon {
+.icon-container {
     background: #85837f none repeat scroll 0 0;
     border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px rgba(133, 131, 127, .4);
+    display: flex;
     height: 40px;
     width: 40px;
-    box-shadow: 0px 0px 0px 3px rgba(133, 131, 127, .4);
-    color: #ffffff!important;
-    position: relative;
 }
-.address-icon i {
-    left: 11px;
-    position: absolute;
-    top: 8px;
+.icon-container i {
+    color: #ffffff;
+    margin: auto;
     font-size: 26px;
 }
-.address .address-icon i {
-    left:13px;
-}
 .logo {
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s;
     background: #ffffff;
     height: 300px;
-    left: 25%;
+    left: 10%;
     position: absolute;
     top: 30px;
     width: 300px;
@@ -1073,95 +1022,94 @@ select {
     box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, .3);
     border-radius: 50%;
 }
+.logo:hover {
+    transition: all 0.2s;
+    box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, .5);
+}
 .logo > img {
+    transition: all 0.2s;
     display: block;
-    margin: 28px auto 0;
+    margin: 9% auto 0;
     width: 62%;
 }
 
 /* ----------- Our breakpoints - use in each .css file as needed ----------- */
+@media screen and (max-width: 1000px) {
+    .logo {
+        left: 5%;
+    }
+    .info-container {
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .logo {
+        height: 250px;
+        width: 250px;
+    }
+    .info-container {
+        right: 3%;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .logo {
-        transition: all 0.2s ease 0s;
-        height: 200px;
-        width: 200px;
-        top:30px;
+        height: 180px;
+        width: 180px;
+        top: 20px;
     }
-    .logo > img {
-        transition: all 0.2s ease 0s;
-        margin: 18px auto 0;
-    }
-    .sub-header .info-container {
-        transition: all 0.2s ease 0s;
-        flex-direction:row;
-        width: 75%;
-        top: 0;
-        bottom: 0;
-    }
-    .sub-header .spacer-container {
-        transition: all 0.2s ease 0s;
-        position: absolute;
-        width: 0;
-    }
-    .sub-header .logo-container {
-        transition: all 0.2s ease 0s;
-        width: 25%;
+    .info-container {
+        right: 2%;
     }
 }
 
 @media screen and (max-width: 700px) {
+    .logo {
+        height: 150px;
+        width: 150px;
+        left: 3%;
+        top: -20px;
+    }
+    .info-container div ul {
+        margin: 0 4px;
+    }
+    .info-container div ul li {
+        font-size: 14px;
+        margin: auto 5px;
+    }
+    .icon-container {
+        height: 35px;
+        width: 35px;
+    }
+    .icon-container i {
+        font-size: 22px;
+    }
     .nav-icon {
-        transition: all 0.2s ease 0s;
         display: inherit;
         position: absolute;
         right: 20px;
         top: 0;
     }
     .search-icon {
-        transition: all 0.2s ease 0s;
         margin-right:75px;
     }
-    .nav-is-open {
-        transition: all 0.2s ease 0s;
-        width: 100%;
-        max-width: 700px;
-    }
     .top-bar-container {
-        transition: all 0.2s ease 0s;
         display: none;
     }
+}
+
+@media screen and (max-width: 600px) {
     .logo {
-        transition: all 0.2s ease 0s;
-        display: none;
+        height: 130px;
+        width: 130px;
+        top: -10px;
     }
-    .logo > img {
-        transition: all 0.2s ease 0s;
-        display: none;
-    }
-    .sub-header .info-container {
-        transition: all 0.2s ease 0s;
-        width: 100%;
-        top: 0;
-        bottom: 0;
-    }
-    .sub-header .spacer-container {
-        display: none;
-    }
-    .sub-header .logo-container {
-        display: none;
-    }
-    .info-container>div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .contact > ul {
-        transition: all 0.2s ease 0s;
-        position: static;
-    }
-    .address > ul {
-        transition: all 0.2s ease 0s;
-        position: static;
+    .info-container {
+        flex-direction: column;
+        justify-content: space-around;
+        right: 5%;
+        height: 85%
     }
 }
 
@@ -1174,20 +1122,20 @@ select {
     position: absolute;
     right: 0;
     text-align: center;
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s;
     z-index: 2;
 }
 .search-is-open {
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s;
     max-width: 700px;
     padding: 0 3%;
 }
 .search-is-closed {
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s;
     display: none;
 }
 .search-form {
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s;
     width:250px;
     padding: 20px 7% 7%;
     border-radius:4px;
@@ -1207,11 +1155,11 @@ select {
 /* ----------- Our breakpoints - use in each .css file as needed ----------- */
 @media screen and (max-width: 800px) {
     .search-is-open {
-        transition: all 0.2s ease 0s;
+        transition: all 0.2s;
         width: 100%;
     }
     .search-form {
-        transition: all 0.2s ease 0s;
+        transition: all 0.2s;
         width:100%;
     }
 }
