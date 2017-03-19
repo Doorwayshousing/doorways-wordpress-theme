@@ -992,6 +992,7 @@ select {
     display: flex;
     height: 110px;
     position: relative;
+    align-items: center;
 }
 .info-container {
     transition: all 0.2s;

@@ -37,9 +37,9 @@ Template Name: Donation Page
         <div class="breakdown-text">How will my donation help?</div>
         <div class="percentage-section">
             <div class="huge-chartbox">
-                <div id="Chart1" chart-type="donut" data-chart-max="100" data-chart-segments='{"0":["0","50","#19C5F5"], "1":["50","50","#ecebeb"]}' data-chart-text="50%" data-chart-caption="Housing"></div>
-                <div id="Chart2" chart-type="donut" data-chart-max="100" data-chart-segments='{"0":["0","50","#19C5F5"], "1":["50","30","#c4cb30"], "2":["80","20","#ecebeb"]}' data-chart-text="30%" data-chart-caption="Food"></div>
-                <div id="Chart3" chart-type="donut" data-chart-max="100" data-chart-segments='{"0":["0","50","#19C5F5"], "1":["50","30","#c4cb30"], "2":["80","20","#f57436"]}' data-chart-text="20%" data-chart-caption="Supplies"></div>
+                <div id="Chart1" chart-type="donut" data-chart-max="100" data-chart-segments='{"0":["0","33","#19C5F5"], "1":["33","67","#ecebeb"]}' data-chart-text="" data-chart-caption="Hope"></div>
+                <div id="Chart2" chart-type="donut" data-chart-max="100" data-chart-segments='{"0":["0","33","#19C5F5"], "1":["33","66","#c4cb30"], "2":["66","34","#ecebeb"]}' data-chart-text="" data-chart-caption="Housing"></div>
+                <div id="Chart3" chart-type="donut" data-chart-max="100" data-chart-segments='{"0":["0","33","#19C5F5"], "1":["33","66","#c4cb30"], "2":["66","34","#f57436"]}' data-chart-text="" data-chart-caption="Healthcare"></div>
             </div>
         </div>
         <div class="breakdown-text-2">Your 100% tax-deductible gift contributes directly to the compassionate care of hundreds of adults and children living with HIV/AIDS.</div>
