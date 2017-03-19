@@ -20,34 +20,7 @@
 </head>
 
 <body>
-    <div id="top-nav">
-        <?php
-        wp_nav_menu( array(
-            'theme_location' => 'main-navigation',
-            'container_class' => 'top-bar-container' ) );
-        ?>
-      <ul class="right-actions">
-        <li class="search-icon"></li>
-        <li class="nav-icon"></li>
-      </ul>
-    </div>
-    <div class="side-nav">
-        <?php
-        wp_nav_menu( array(
-            'theme_location' => 'main-navigation',
-            'container_class' => 'nav-container' ) );
-        ?>
-        <div class="search-container">
-            <form style="display:none;" role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-                <input type="search" class="search-field"
-                    placeholder="Search"
-                    value="<?php echo get_search_query() ?>" name="s"
-                    title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
-                <input type="submit" class="search-submit"
-                    value="<?php echo esc_attr_x( 'Go', 'submit button' ) ?>" />
-            </form>
-        </div>
-    </div>
+    <?php echo do_shortcode( "[hmenu id=1]" ); ?>
     <div class="sub-header">
         <a href="<?php echo home_url('/'); ?>">
             <span class="logo">
