@@ -241,7 +241,7 @@
     .logo {
         height: 130px;
         width: 130px;
-        top: -10px;
+        top: 10px;
     }
     .info-container {
         flex-direction: column;
