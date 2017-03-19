@@ -7,7 +7,7 @@
     min-height: 36px;
 }
 .search-icon, .nav-icon {
-  transition: all 0.2s ease 0s;
+  transition: all 0.2s;
   background:#d8d7d2;
   border-radius: 50%;
   box-shadow: 0px 0px 0px 3px rgba(215, 214, 209, .4);
@@ -17,7 +17,6 @@
   width:35px;
 }
 .search-icon:hover, .nav-icon:hover {
-  transition: all 0.2s ease 0s;
   box-shadow: 0px 0px 0px 3px rgba(215, 214, 209, 1);
 }
 .search-icon:before, .nav-icon:before {
@@ -29,7 +28,6 @@
   top:9px;
 }
 .nav-icon {
-    transition: all 0.2s ease 0s;
     display: none;
     margin-right:0;
 }
@@ -43,7 +41,7 @@
     display:inline-block;
 }
 .nav-container {
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s;
     background: rgba(78,74,71,.9);
     color: white;
     height: 100%;
@@ -52,17 +50,7 @@
     position: absolute;
     right: 0;
     text-align: center;
-    transition: all 0.2s ease 0s;
     z-index: 10;
-}
-.nav-is-open {
-    transition: all 0.2s ease 0s;
-    max-width: 700px;
-    padding: 10;
-}
-.nav-is-closed {
-    transition: all 0.2s ease 0s;
-    display: none;
 }
 .side-menu {
     display: none;
@@ -89,13 +77,11 @@
     color: #bebcb7;
 }
 .top-bar-container .menu li a {
-    transition: all 0.2s ease 0s;
     text-decoration: none;
     color:#bebcb7;
     text-transform: uppercase;
 }
 .top-bar-container .menu li a:hover {
-    transition: all 0.2s ease 0s;
     color:#fff;
     cursor: pointer;
 }
@@ -106,13 +92,11 @@
     margin-top:15px;
 }
 .side-nav .menu li a {
-    transition: all 0.2s ease 0s;
     text-decoration: none;
     color:#bebcb7;
     text-transform: uppercase;
 }
 .side-nav .menu li a:hover {
-    transition: all 0.2s ease 0s;
     color:#fff;
     cursor: pointer;
 }
@@ -121,82 +105,53 @@
 }
 .sub-header {
     background: #d7d8d2;
+    display: flex;
     height: 110px;
     position: relative;
 }
-.sub-header .logo-container {
-    position: absolute;
-    width: 25%;
-}
-.sub-header .spacer-container {
-    position: absolute;
-    width: 15%;
-}
-.sub-header .info-container {
-    position: absolute;
-    width: 60%;
-}
 .info-container {
-    transition: all 0.2s ease 0s;
-    right:0;
-    display:flex;
+    transition: all 0.2s;
+    justify-content:center;
+    position: absolute;
+    right: 10%;
+    display: flex;
     flex-direction: row;
-    font-size:16px;
+    font-size: 16px;
+    height: 100%;
 }
 .info-container > div {
-    transition: all 0.2s ease 0s;
-    flex: 1;
+    transition: all 0.2s;
+    display: flex;
     position: relative;
 }
-.info-container div ul li:first-child {
-    margin-right: 10px;
+.info-container div ul {
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
 }
-.contact > ul {
-    transition: all 0.2s ease 0s;
-    position: absolute;
-    top: 36px;
-    right:0;
-    margin-right:20px;
-}
-.contact ul li {
-    display: inline-block;
-    vertical-align: middle;
+.info-container div ul li {
     color:#85837f;
+    margin: auto 10px;
 }
-.address > ul {
-    transition: all 0.2s ease 0s;
-    position: absolute;
-    top: 36px;
-    left: 20px;
-}
-.address ul li {
-    display: inline-block;
-    vertical-align: top;
-    color:#85837f;
-}
-.address-icon {
+.icon-container {
     background: #85837f none repeat scroll 0 0;
     border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px rgba(133, 131, 127, .4);
+    display: flex;
     height: 40px;
     width: 40px;
-    box-shadow: 0px 0px 0px 3px rgba(133, 131, 127, .4);
-    color: #ffffff!important;
-    position: relative;
 }
-.address-icon i {
-    left: 11px;
-    position: absolute;
-    top: 8px;
+.icon-container i {
+    color: #ffffff;
+    margin: auto;
     font-size: 26px;
 }
-.address .address-icon i {
-    left:13px;
-}
 .logo {
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s;
     background: #ffffff;
     height: 300px;
-    left: 25%;
+    left: 10%;
     position: absolute;
     top: 30px;
     width: 300px;
@@ -204,94 +159,93 @@
     box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, .3);
     border-radius: 50%;
 }
+.logo:hover {
+    transition: all 0.2s;
+    box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, .5);
+}
 .logo > img {
+    transition: all 0.2s;
     display: block;
-    margin: 28px auto 0;
+    margin: 9% auto 0;
     width: 62%;
 }
 
 /* ----------- Our breakpoints - use in each .css file as needed ----------- */
+@media screen and (max-width: 1000px) {
+    .logo {
+        left: 5%;
+    }
+    .info-container {
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .logo {
+        height: 250px;
+        width: 250px;
+    }
+    .info-container {
+        right: 3%;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .logo {
-        transition: all 0.2s ease 0s;
-        height: 200px;
-        width: 200px;
-        top:30px;
+        height: 180px;
+        width: 180px;
+        top: 20px;
     }
-    .logo > img {
-        transition: all 0.2s ease 0s;
-        margin: 18px auto 0;
-    }
-    .sub-header .info-container {
-        transition: all 0.2s ease 0s;
-        flex-direction:row;
-        width: 75%;
-        top: 0;
-        bottom: 0;
-    }
-    .sub-header .spacer-container {
-        transition: all 0.2s ease 0s;
-        position: absolute;
-        width: 0;
-    }
-    .sub-header .logo-container {
-        transition: all 0.2s ease 0s;
-        width: 25%;
+    .info-container {
+        right: 2%;
     }
 }
 
 @media screen and (max-width: 700px) {
+    .logo {
+        height: 150px;
+        width: 150px;
+        left: 3%;
+        top: -20px;
+    }
+    .info-container div ul {
+        margin: 0 4px;
+    }
+    .info-container div ul li {
+        font-size: 14px;
+        margin: auto 5px;
+    }
+    .icon-container {
+        height: 35px;
+        width: 35px;
+    }
+    .icon-container i {
+        font-size: 22px;
+    }
     .nav-icon {
-        transition: all 0.2s ease 0s;
         display: inherit;
         position: absolute;
         right: 20px;
         top: 0;
     }
     .search-icon {
-        transition: all 0.2s ease 0s;
         margin-right:75px;
     }
-    .nav-is-open {
-        transition: all 0.2s ease 0s;
-        width: 100%;
-        max-width: 700px;
-    }
     .top-bar-container {
-        transition: all 0.2s ease 0s;
         display: none;
     }
+}
+
+@media screen and (max-width: 600px) {
     .logo {
-        transition: all 0.2s ease 0s;
-        display: none;
+        height: 130px;
+        width: 130px;
+        top: -10px;
     }
-    .logo > img {
-        transition: all 0.2s ease 0s;
-        display: none;
-    }
-    .sub-header .info-container {
-        transition: all 0.2s ease 0s;
-        width: 100%;
-        top: 0;
-        bottom: 0;
-    }
-    .sub-header .spacer-container {
-        display: none;
-    }
-    .sub-header .logo-container {
-        display: none;
-    }
-    .info-container>div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .contact > ul {
-        transition: all 0.2s ease 0s;
-        position: static;
-    }
-    .address > ul {
-        transition: all 0.2s ease 0s;
-        position: static;
+    .info-container {
+        flex-direction: column;
+        justify-content: space-around;
+        right: 5%;
+        height: 85%
     }
 }
