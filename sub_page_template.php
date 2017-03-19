@@ -11,7 +11,4 @@ Template Name: Sub Page
      <?php endwhile; endif; ?>
    </div>
 </div>
-
-
-
  <?php get_footer(); ?>
