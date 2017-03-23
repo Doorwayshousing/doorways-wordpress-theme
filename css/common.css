@@ -86,11 +86,15 @@ p {
 	height: 240px;
 	width:100%;
 }
+#banner-title-container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	width: 65%;
+}
 #banner-title-text {
 	color:#fff;
-	font-size:60px;
-	margin-bottom: 30px;
-	margin-right:100px;
+	font-size: 60px;
 }
 #page-content-body {
 	display:flex;
@@ -99,4 +103,37 @@ p {
 #single-post-container .content-text, #page-content-body .content-text {
 	margin:50px;
 	max-width:800px;
+}
+
+@media screen and (max-width: 1300px) {
+
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 1100px) {
+
+}
+@media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 400px) {
+}
+
+@media screen and (max-width: 380px) {
+}
+
+@media screen and (max-width: 330px) {
 }
