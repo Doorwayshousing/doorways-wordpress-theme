@@ -86,12 +86,15 @@ p {
 	height: 240px;
 	width:100%;
 }
+#banner-title-container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	width: 65%;
+}
 #banner-title-text {
 	color:#fff;
-	font-size: 4.5vw;
-	/*font-size: 60px;*/
-	margin-bottom: 30px;
-	margin-right:100px;
+	font-size: 60px;
 }
 #page-content-body {
 	display:flex;
