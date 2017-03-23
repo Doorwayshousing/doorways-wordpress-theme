@@ -251,3 +251,23 @@
         height: 85%
     }
 }
+
+@media screen and (max-width: 380px) {
+    .logo {
+        height: 100px;
+        width: 100px;
+        left: 5%;
+    }
+    .info-container {
+        right: 2%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .logo {
+        left: 3%;
+    }
+    .info-container {
+        right: 0;
+    }
+}

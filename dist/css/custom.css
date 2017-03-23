@@ -663,6 +663,9 @@ select {
 .homepage-banner .tagline {
     transition: all 0.2s;
     background:rgba(255,255,255,0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 75%;
     position: absolute;
     right: 0;
@@ -868,16 +871,14 @@ select {
         display:none;
     }
 }
-@media screen and (max-width: 800px) {
-
-}
 @media screen and (max-width: 700px) {
     .homepage-banner .tagline {
         width: 100%;
     }
+}
+@media screen and (max-width: 400px) {
     .tagline img {
-        margin:60px auto;
-        display: block;
+        max-width:  85%;
     }
 }
 
@@ -1132,6 +1133,26 @@ select {
         justify-content: space-around;
         right: 5%;
         height: 85%
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .logo {
+        height: 100px;
+        width: 100px;
+        left: 5%;
+    }
+    .info-container {
+        right: 2%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .logo {
+        left: 3%;
+    }
+    .info-container {
+        right: 0;
     }
 }
 
