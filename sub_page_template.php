@@ -4,7 +4,7 @@ Template Name: Sub Page
 */
  get_header(); ?>
 <div id="page-content-container">
-    <div id="page-content-banner">
+    <div id="page-content-banner" style="background: url('<?php the_post_thumbnail_url(); ?>') no-repeat center top; background-size: cover;">
         <div id="banner-title-container">
             <div id="banner-title-text">
                 <?php wp_title(''); ?>

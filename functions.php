@@ -8,6 +8,12 @@ function doorways_setup() {
     );
     add_theme_support( 'html5', array( 'search-form' ) );
     add_theme_support( 'post-thumbnails' );
+
+    $defaults = array(
+    	'default-image'          => '',
+    	'uploads'                => true,
+    );
+    add_theme_support( 'custom-header' );
 }
 
 add_action( 'init', 'doorways_setup');
