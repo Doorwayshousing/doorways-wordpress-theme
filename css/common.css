@@ -85,9 +85,13 @@ p {
 	font-family:'Baskerville', 'Roboto', 'Helvetica', sans-serif;
 	height: 240px;
 	width:100%;
+	overflow: hidden;
+}
+#banner-image {
+	/*overflow: hidden;*/
 }
 #banner-title-container {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -95,7 +99,7 @@ p {
 	width: 65%;
 }
 #banner-title-text {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	color:#fff;
 	display: flex;
 	justify-content: center;

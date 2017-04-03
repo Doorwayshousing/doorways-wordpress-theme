@@ -10,9 +10,9 @@ function doorways_setup() {
     add_theme_support( 'post-thumbnails' );
 
     $defaults = array(
-	'default-image'          => '',
-	'uploads'                => true,
-);
+    	'default-image'          => '',
+    	'uploads'                => true,
+    );
     add_theme_support( 'custom-header' );
 }
 
