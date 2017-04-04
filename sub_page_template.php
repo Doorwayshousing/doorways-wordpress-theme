@@ -3,6 +3,9 @@
 Template Name: Sub Page
 */
  get_header(); ?>
+
+background: linear-gradient(to right,#bfd71f 0%,#50b2f1 100%);
+
 <div id="page-content-container">
     <div id="page-content-banner" style="background: url('<?php the_post_thumbnail_url(); ?>') no-repeat center top; background-size: cover;">
         <div id="banner-title-container">
