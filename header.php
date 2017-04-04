@@ -11,19 +11,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yellowtail" >
-<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,700%7cCourgette%7cRaleway:400,700,500%7cCourgette%7cLato:700' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src="https://www.sagepayments.net/pay/1.0.0/js/pay.min.js"></script>
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/css/tmm_form_wizard_style.css" />
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/css/grid.css" />
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/css/tmm_form_wizard_layout.css" />
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/css/fontello.css" />
 <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/css/custom.min.css">
 <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/js/custom.min.js"></script>
-<!--[if lt IE 9]>
-    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/js/respond.min.js"></script>
-<![endif]-->
-<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/js/tmm_form_wizard_custom.js"></script>
 
 <? wp_head(); ?>
 </head>
