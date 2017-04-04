@@ -4,13 +4,12 @@ Template Name: Sub Page
 */
  get_header(); ?>
  <?php if ( has_post_thumbnail() ) {
-     $bannerBackground = the_post_thumbnail_url();
+     $bannerBackground = get_the_post_thumbnail_url();
  } else {
      $bannerBackground = get_template_directory_uri()."/img/gradient-banner.jpg";
  } ?>
 
 <div id="page-content-container">
-    <!-- <div id="page-content-banner" style="background: url('<?php the_post_thumbnail_url(); ?>') no-repeat center top; background-size: cover;"> -->
     <div id="page-content-banner" style="background: url('<?php echo $bannerBackground; ?>') no-repeat center top; background-size: cover;">
         <div id="banner-background">
         </div>
