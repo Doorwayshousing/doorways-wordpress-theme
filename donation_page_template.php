@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Donation Page
+Template Name: Donation Page Template
 */
  get_header();
     require('shared.php');
