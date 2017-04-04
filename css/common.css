@@ -65,12 +65,16 @@ h1 {
 	padding-top:15px;
 }
 h2 {
-	font-size:130%;
+	font-size:125%;
 	font-weight:bold;
 	padding-top:15px;
 }
 p {
 	margin: 16px 0;
+}
+
+strong {
+	font-weight:bold;
 }
 
 /* Single Post CSS */
