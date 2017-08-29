@@ -1,1 +1,13 @@
-wysiwyg.css
+
+.alignleft,
+.alignright {
+    margin-bottom: 1rem;
+}
+.alignleft {
+    float: left;
+    margin-right: 1rem;
+}
+.alignright {
+    float: right;
+    margin-left: 1rem;
+}
