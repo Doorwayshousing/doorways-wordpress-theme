@@ -76,7 +76,7 @@ Template Name: Doorways Home Page
             <a href="<?php the_permalink(); ?>">
                  <li class="<?php $category = get_the_category(); $firstCategory = $category[0]->cat_name; echo $firstCategory; ?>">
                     <div class="testimonial-icon"></div>
-                     <div class="content-text"><?php the_content(); ?></div>
+                     <div class="content-text"><?php the_excerpt(); ?></div>
                      <div class="signature-text"><?php the_title(); ?></div>
                  </li>
             </a>
