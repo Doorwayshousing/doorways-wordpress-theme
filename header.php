@@ -1,3 +1,22 @@
+<?php
+    require('shared.php');
+    $nonces = getNonces();
+    $requestType = "payment";
+    $requestId = "Donation#" . rand(0, 1000); // this'll be used as the order number
+    $req = [
+        "merchantId" => $merchant['ID'],
+        "merchantKey" => $merchant['KEY'], // don't include the Merchant Key in the JavaScript initialization!
+        "requestType" => $requestType,
+        "requestId" => $requestId,
+        "amount" => $request['amount'],
+        "nonce" => $nonces['salt'],
+        // on the other hand, include these here even if you leave them out of the JS init
+        "postbackUrl" => $request['postbackUrl'], // if not specified in the JS init, defaults to the empty string
+        "environment" => $request['environment'], // defaults to "cert"
+        "preAuth" => $request['preAuth'] // defaults to false
+    ];
+    $authKey = getAuthKey(json_encode($req), $developer['KEY'], $nonces['salt'], $nonces['iv']);
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -12,6 +31,17 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yellowtail" >
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    var apiKey = "<?php echo $developer['ID']; ?>";
+    var environment = "<?php echo $request['environment']; ?>";
+    var postbackUrl = "<?php echo $request['postbackUrl']; ?>";
+    var merchantId = "<?php echo $merchant['ID']; ?>";
+    var authKey = "<?php echo $authKey; ?>";
+    var nonce = "<?php echo $nonces['salt']; ?>";
+    var requestType = "<?php echo $requestType; ?>";
+    var requestId = "<?php echo $requestId; ?>";
+    var amount = "<?php echo $request['amount']; ?>";
+</script>
 <script type="text/javascript" src="https://www.sagepayments.net/pay/1.0.0/js/pay.min.js"></script>
 <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/css/custom.min.css">
 <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/js/custom.min.js"></script>

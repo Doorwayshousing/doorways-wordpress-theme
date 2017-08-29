@@ -10,15 +10,15 @@
         // when using REQUEST library, initialize via CORE instead of UI
         console.log('console.log before CORE.Initialize');
         $CORE.Initialize({
-            apiKey: "<?php echo $developer['ID']; ?>",
-            environment: "<?php echo $request['environment']; ?>",
-            postbackUrl: "<?php echo $request['postbackUrl']; ?>",
-            merchantId: "<?php echo $merchant['ID']; ?>",
-            authKey: "<?php echo $authKey; ?>",
-            nonce: "<?php echo $nonces['salt']; ?>",
-            requestType: "<?php echo $requestType; ?>",
-            requestId: "<?php echo $requestId; ?>",
-            amount: "<?php echo $request['amount']; ?>",
+            apiKey: apiKey,
+            environment: environment,
+            postbackUrl: postbackUrl,
+            merchantId: merchantId,
+            authKey: authKey,
+            nonce: nonce,
+            requestType: requestType,
+            requestId: requestId,
+            amount: amount
         });
         console.log('console.log after CORE.Initialize');
         console.log($CORE);
@@ -109,8 +109,18 @@
 
         function checkForCompleteAndValidForm() {
             console.log('checkForCompleteAndValidForm');
+            console.log(isValidCVV);
+            console.log(isValidExp);
+            console.log(isValidCC);
+            console.log(isValidBilling);
             var isValidBilling = true;
-            $.each($(".billing"), function(){ isValidBilling = isValidBilling && $(this).hasClass("has-success"); });
+
+            // $.each($(".billing"), function() {
+            //     console.log('Check isValidBilling');
+            //     console.log($(this));
+            //     isValidBilling = isValidBilling && $(this).hasClass("has-success");
+            // });
+
             // assuming most people fill out the form from top-to-bottom,
             // checking it from bottom-to-top takes advantage of short-circuiting
             if (isValidCVV && isValidExp && isValidCC && isValidBilling) {
